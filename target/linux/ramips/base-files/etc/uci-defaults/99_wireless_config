@@ -1,12 +1,21 @@
 #!/bin/sh
 
 [ "$(uci -q get wireless.@wifi-device[0].disabled)" = "0" ] && exit 0
-[ "$(uci -q get wireless.@wifi-iface[0].ssid)" != "OpenWrt" ] && exit 0
+[ "$(uci -q get wireless.@wifi-iface[0].ssid)" != "WIFI" ] && exit 0
 
 uci set wireless.@wifi-device[0].disabled="0"
+uci set wireless.@wifi-device[0].country="US"
+uci set wireless.@wifi-device[0].channel="auto"
+uci set wireless.@wifi-device[0].legacy_rates="0"
+uci set wireless.@wifi-device[0].distance="100"
+uci set wireless.@wifi-device[0].txpower="16"
+uci set wireless.@wifi-device[0].frag="2346"
+uci set wireless.@wifi-device[0].rts="2347"
 uci set wireless.@wifi-iface[0].disabled="0"
-uci set wireless.@wifi-iface[0].ssid="OpenWrt"
-uci set wireless.@wifi-iface[0].encryption="none"
+uci set wireless.@wifi-iface[0].ssid="WIFI"
+uci set wireless.@wifi-iface[0].encryption="psk2+ccmp"
+uci set wireless.@wifi-iface[0].key="12345678"
+uci set wireless.@wifi-iface[0].short_preamble="0"
 uci commit wireless
 
 exit 0

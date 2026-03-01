@@ -77,7 +77,7 @@ detect_mac80211() {
 		[ "$found" -gt 0 ] && continue
 
 		mode_band="g"
-		channel="11"
+		channel="auto"
 		htmode=""
 		ht_capab=""
 
@@ -113,14 +113,25 @@ detect_mac80211() {
 			set wireless.radio${devidx}.hwmode=11${mode_band}
 			${dev_id}
 			${ht_capab}
-			set wireless.radio${devidx}.disabled=1
+			set wireless.radio${devidx}.disabled=0
+			set wireless.radio${devidx}.country=US
+			set wireless.radio${devidx}.legacy_rates=0
+			set wireless.radio${devidx}.distance=100
+			set wireless.radio${devidx}.txpower=16
+			set wireless.radio${devidx}.frag=2346
+			set wireless.radio${devidx}.rts=2347
 
 			set wireless.default_radio${devidx}=wifi-iface
 			set wireless.default_radio${devidx}.device=radio${devidx}
 			set wireless.default_radio${devidx}.network=lan
 			set wireless.default_radio${devidx}.mode=ap
-			set wireless.default_radio${devidx}.ssid=OpenWrt
-			set wireless.default_radio${devidx}.encryption=none
+			set wireless.default_radio${devidx}.ssid=WIFI
+			set wireless.default_radio${devidx}.encryption=psk2+ccmp
+			set wireless.default_radio${devidx}.key=12345678
+			set wireless.default_radio${devidx}.dtim_period=1
+			set wireless.default_radio${devidx}.short_preamble=0
+			set wireless.default_radio${devidx}.wpa_group_rekey=86400
+			set wireless.default_radio${devidx}.disassoc_low_ack=0
 EOF
 		uci -q commit wireless
 

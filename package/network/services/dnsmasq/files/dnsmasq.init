@@ -521,7 +521,7 @@ dhcp_add() {
 
 	config_get start "$cfg" start 100
 	config_get limit "$cfg" limit 150
-	config_get leasetime "$cfg" leasetime 12h
+	config_get leasetime "$cfg" leasetime 1d
 	config_get options "$cfg" options
 	config_get_bool dynamicdhcp "$cfg" dynamicdhcp 1
 
