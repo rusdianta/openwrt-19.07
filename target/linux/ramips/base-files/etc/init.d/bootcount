@@ -17,5 +17,8 @@ start() {
 	sk-wb8)
 		fw_setenv bootcount 0
 		;;
+	xiaomi,mi-router-4c)
+		fw_setenv flag_boot_success 1
+		;;
 	esac
 }
