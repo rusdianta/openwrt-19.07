@@ -38,7 +38,7 @@ define Device/cudy_wr1000
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += wr1000
 endef
-TARGET_DEVICES += cudy_wr1000
+# TARGET_DEVICES += cudy_wr1000
 
 define Device/tama_w06
   DTS := W06
@@ -46,14 +46,14 @@ define Device/tama_w06
   DEVICE_TITLE := Tama W06
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += tama_w06
+# TARGET_DEVICES += tama_w06
 
 define Device/duzun-dm06
   DTS := DUZUN-DM06
   DEVICE_TITLE := DuZun DM06
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += duzun-dm06
+# TARGET_DEVICES += duzun-dm06
 
 define Device/gl-mt300n-v2
   DTS := GL-MT300N-V2
@@ -76,14 +76,14 @@ define Device/hc5661a
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := HiWiFi HC5661A
 endef
-TARGET_DEVICES += hc5661a
+# TARGET_DEVICES += hc5661a
 
 define Device/hilink_hlk-7628n
   DTS := HLK-7628N
   IMAGE_SIZE := $(ralink_default_fw_size_32M)
   DEVICE_TITLE := HILINK HLK7628N
 endef
-TARGET_DEVICES += hilink_hlk-7628n
+# TARGET_DEVICES += hilink_hlk-7628n
 
 define Device/hiwifi_hc5861b
   DTS := HC5861B
@@ -91,7 +91,7 @@ define Device/hiwifi_hc5861b
   DEVICE_TITLE := HiWiFi HC5861B
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += hiwifi_hc5861b
+# TARGET_DEVICES += hiwifi_hc5861b
 
 define Device/LinkIt7688
   DTS := LINKIT7688
@@ -100,7 +100,7 @@ define Device/LinkIt7688
   DEVICE_TITLE := MediaTek LinkIt Smart 7688
   DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci uboot-envtools
 endef
-TARGET_DEVICES += LinkIt7688
+# TARGET_DEVICES += LinkIt7688
 
 define Device/mac1200r-v2
   DTS := MAC1200RV2
@@ -108,7 +108,7 @@ define Device/mac1200r-v2
   SUPPORTED_DEVICES := mac1200rv2
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += mac1200r-v2
+# TARGET_DEVICES += mac1200r-v2
 
 define Device/miwifi-nano
   DTS := MIWIFI-NANO
@@ -125,7 +125,7 @@ define Device/mt7628
   DEVICE_TITLE := MediaTek MT7628 EVB
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += mt7628
+# TARGET_DEVICES += mt7628
 
 define Device/netgear_r6120
   DTS := R6120
@@ -142,7 +142,7 @@ define Device/netgear_r6120
   IMAGE/factory.img := pad-extra 576k | $$(IMAGE/default) | pad-to $$$$(BLOCKSIZE) | \
 	sercom-footer | pad-to 128 | zip R6120.bin | sercom-seal
 endef
-TARGET_DEVICES += netgear_r6120
+# TARGET_DEVICES += netgear_r6120
 
 define Device/omega2
   DTS := OMEGA2
@@ -150,7 +150,7 @@ define Device/omega2
   DEVICE_TITLE := Onion Omega2
   DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci uboot-envtools
 endef
-TARGET_DEVICES += omega2
+# TARGET_DEVICES += omega2
 
 define Device/omega2p
   DTS := OMEGA2P
@@ -158,7 +158,7 @@ define Device/omega2p
   DEVICE_TITLE := Onion Omega2+
   DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci uboot-envtools kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += omega2p
+# TARGET_DEVICES += omega2p
 
 define Device/pbr-d1
   DTS := PBR-D1
@@ -166,14 +166,14 @@ define Device/pbr-d1
   DEVICE_TITLE := PBR-D1
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += pbr-d1
+# TARGET_DEVICES += pbr-d1
 
 define Device/rakwireless_rak633
   DTS := RAK633
   DEVICE_TITLE := Rakwireless RAK633
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += rakwireless_rak633
+# TARGET_DEVICES += rakwireless_rak633
 
 define Device/skylab_skw92a
   DTS := SKW92A
@@ -181,7 +181,7 @@ define Device/skylab_skw92a
   DEVICE_TITLE := Skylab SKW92A
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += skylab_skw92a
+# TARGET_DEVICES += skylab_skw92a
 
 define Device/totolink_lr1200
   DTS := TOTOLINK-LR1200
@@ -189,7 +189,7 @@ define Device/totolink_lr1200
   DEVICE_TITLE := TOTOLINK LR1200
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 uqmi
 endef
-TARGET_DEVICES += totolink_lr1200
+# TARGET_DEVICES += totolink_lr1200
 
 define Device/tplink_tl-wa801nd-v5
   $(Device/tplink)
@@ -409,7 +409,7 @@ define Device/u7628-01-128M-16M
   DEVICE_TITLE := UniElec U7628-01 (128M RAM/16M flash)
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += u7628-01-128M-16M
+# TARGET_DEVICES += u7628-01-128M-16M
 
 define Device/vocore2
   DTS := VOCORE2
@@ -418,7 +418,7 @@ define Device/vocore2
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport \
     kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += vocore2
+# TARGET_DEVICES += vocore2
 
 define Device/vocore2lite
   DTS := VOCORE2LITE
@@ -427,7 +427,7 @@ define Device/vocore2lite
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport \
     kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += vocore2lite
+# TARGET_DEVICES += vocore2lite
 
 define Device/wavlink_wl-wn570ha1
   DTS := WL-WN570HA1
@@ -435,7 +435,7 @@ define Device/wavlink_wl-wn570ha1
   DEVICE_TITLE := Wavlink WL-WN570HA1
   DEVICE_PACKAGES := kmod-mt76x0e
 endef
-TARGET_DEVICES += wavlink_wl-wn570ha1
+# TARGET_DEVICES += wavlink_wl-wn570ha1
 
 define Device/wavlink_wl-wn575a3
   DTS := WL-WN575A3
@@ -444,7 +444,7 @@ define Device/wavlink_wl-wn575a3
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += wl-wn575a3
 endef
-TARGET_DEVICES += wavlink_wl-wn575a3
+# TARGET_DEVICES += wavlink_wl-wn575a3
 
 define Device/wcr-1166ds
   DTS := WCR-1166DS
@@ -461,7 +461,7 @@ define Device/wcr-1166ds
   DEVICE_TITLE := Buffalo WCR-1166DS
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += wcr-1166ds
+# TARGET_DEVICES += wcr-1166ds
 
 define Device/widora_neo-16m
   DTS := WIDORA-NEO-16M
@@ -470,7 +470,7 @@ define Device/widora_neo-16m
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
   SUPPORTED_DEVICES += widora-neo
 endef
-TARGET_DEVICES += widora_neo-16m
+# TARGET_DEVICES += widora_neo-16m
 
 define Device/widora_neo-32m
   DTS := WIDORA-NEO-32M
@@ -478,7 +478,7 @@ define Device/widora_neo-32m
   DEVICE_TITLE := Widora-NEO (32M)
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += widora_neo-32m
+# TARGET_DEVICES += widora_neo-32m
 
 define Device/wiznet_wizfi630s
   DTS := WIZFI630S
@@ -486,7 +486,7 @@ define Device/wiznet_wizfi630s
   DEVICE_TITLE := WIZnet WizFi630S
   SUPPORTED_DEVICES += wizfi630s
 endef
-TARGET_DEVICES += wiznet_wizfi630s
+# TARGET_DEVICES += wiznet_wizfi630s
 
 define Device/wrtnode2p
   DTS := WRTNODE2P
@@ -494,7 +494,7 @@ define Device/wrtnode2p
   DEVICE_TITLE := WRTnode 2P
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += wrtnode2p
+# TARGET_DEVICES += wrtnode2p
 
 define Device/wrtnode2r
   DTS := WRTNODE2R
@@ -502,7 +502,7 @@ define Device/wrtnode2r
   DEVICE_TITLE := WRTnode 2R
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += wrtnode2r
+# TARGET_DEVICES += wrtnode2r
 
 define Device/xiaomi_mir4a-100m
   DTS := XIAOMI-MIR4A-100M
@@ -525,7 +525,7 @@ define Device/zbtlink_zbt-we1226
   IMAGE_SIZE := $(ralink_default_fw_size_8M)
   DEVICE_TITLE := ZBTlink ZBT-WE1226
 endef
-TARGET_DEVICES += zbtlink_zbt-we1226
+# TARGET_DEVICES += zbtlink_zbt-we1226
 
 define Device/zyxel_keenetic-extra-ii
   DTS := ki_rb
@@ -537,4 +537,4 @@ define Device/zyxel_keenetic-extra-ii
   IMAGE/factory.bin := $$(sysupgrade_bin) | pad-to $$$$(BLOCKSIZE) | \
 	check-size $$$$(IMAGE_SIZE) | zyimage -d 6162 -v "ZyXEL Keenetic Extra II"
 endef
-TARGET_DEVICES += zyxel_keenetic-extra-ii
+# TARGET_DEVICES += zyxel_keenetic-extra-ii

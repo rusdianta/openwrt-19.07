@@ -12,7 +12,7 @@ define Device/at91-sama5d2_xplained
   KERNEL_SIZE := 6144k
   $(Device/evaluation-sdimage)
 endef
-TARGET_DEVICES += at91-sama5d2_xplained
+# TARGET_DEVICES += at91-sama5d2_xplained
 
 define Device/at91-sama5d27_som1_ek
   $(Device/evaluation-dtb)
@@ -20,7 +20,7 @@ define Device/at91-sama5d27_som1_ek
   KERNEL_SIZE := 6144k
   $(Device/evaluation-sdimage)
 endef
-TARGET_DEVICES += at91-sama5d27_som1_ek
+# TARGET_DEVICES += at91-sama5d27_som1_ek
 
 define Device/at91-sama5d2_ptc_ek
   $(Device/evaluation-dtb)
@@ -28,7 +28,7 @@ define Device/at91-sama5d2_ptc_ek
   KERNEL_SIZE := 6144k
   $(Device/evaluation-sdimage)
 endef
-TARGET_DEVICES += at91-sama5d2_ptc_ek
+# TARGET_DEVICES += at91-sama5d2_ptc_ek
 
 
 define Device/at91-sama5d3_xplained
@@ -37,7 +37,7 @@ define Device/at91-sama5d3_xplained
   KERNEL_SIZE := 6144k
   $(Device/evaluation-sdimage)
 endef
-TARGET_DEVICES += at91-sama5d3_xplained
+# TARGET_DEVICES += at91-sama5d3_xplained
 
 ifeq ($(strip $(CONFIG_EXTERNAL_KERNEL_TREE)),"")
  ifeq ($(strip $(CONFIG_KERNEL_GIT_CLONE_URI)),"")
@@ -53,7 +53,7 @@ ifeq ($(strip $(CONFIG_EXTERNAL_KERNEL_TREE)),"")
     SUBPAGESIZE := 2048
     MKUBIFS_OPTS := -m $$(PAGESIZE) -e 124KiB -c 955
   endef
-  TARGET_DEVICES += wb50n
+# TARGET_DEVICES += wb50n
  endif
 endif
 
@@ -68,4 +68,4 @@ define Device/at91-sama5d4_xplained
   MKUBIFS_OPTS := -m $$(PAGESIZE) -e 248KiB -c 2082
   $(Device/evaluation-sdimage)
 endef
-TARGET_DEVICES += at91-sama5d4_xplained
+# TARGET_DEVICES += at91-sama5d4_xplained

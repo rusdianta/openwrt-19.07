@@ -249,7 +249,7 @@ define Device/standard
   DEVICE_TITLE := Image with LZMA loader and LZMA compressed kernel
   DEVICE_PACKAGES := kmod-b44 kmod-bgmac kmod-tg3
 endef
-TARGET_DEVICES += standard
+# TARGET_DEVICES += standard
 endif
 
 #################################################
@@ -264,7 +264,7 @@ define Device/asus-wl-300g
   $(Device/asus)
   PRODUCTID := "WL300g      "
 endef
-TARGET_DEVICES += asus-wl-300g
+# TARGET_DEVICES += asus-wl-300g
 
 define Device/asus-wl-320gp
   DEVICE_TITLE := Asus WL-320gP
@@ -272,7 +272,7 @@ define Device/asus-wl-320gp
   $(Device/asus)
   PRODUCTID := "WL320gP     "
 endef
-TARGET_DEVICES += asus-wl-320gp
+# TARGET_DEVICES += asus-wl-320gp
 
 define Device/asus-wl-330ge
   DEVICE_TITLE := Asus WL-330gE
@@ -280,7 +280,7 @@ define Device/asus-wl-330ge
   $(Device/asus)
   PRODUCTID := "WL-330gE    "
 endef
-TARGET_DEVICES += asus-wl-330ge
+# TARGET_DEVICES += asus-wl-330ge
 
 define Device/asus-wl-500gd
   DEVICE_TITLE := Asus WL-500g Deluxe
@@ -288,7 +288,7 @@ define Device/asus-wl-500gd
   $(Device/asus)
   PRODUCTID := "WL500gx     "
 endef
-TARGET_DEVICES += asus-wl-500gd
+# TARGET_DEVICES += asus-wl-500gd
 
 define Device/asus-wl-500gp-v1
   DEVICE_TITLE := Asus WL-500gP v1
@@ -296,7 +296,7 @@ define Device/asus-wl-500gp-v1
   $(Device/asus)
   PRODUCTID := "WL500gp     "
 endef
-TARGET_DEVICES += asus-wl-500gp-v1
+# TARGET_DEVICES += asus-wl-500gp-v1
 
 define Device/asus-wl-500gp-v2
   DEVICE_TITLE := Asus WL-500gP v2
@@ -304,7 +304,7 @@ define Device/asus-wl-500gp-v2
   $(Device/asus)
   PRODUCTID := "WL500gpv2   "
 endef
-TARGET_DEVICES += asus-wl-500gp-v2
+# TARGET_DEVICES += asus-wl-500gp-v2
 
 define Device/asus-wl-500w
   DEVICE_TITLE := Asus WL-500W
@@ -312,7 +312,7 @@ define Device/asus-wl-500w
   $(Device/asus)
   PRODUCTID := "WL500W      "
 endef
-TARGET_DEVICES += asus-wl-500w
+# TARGET_DEVICES += asus-wl-500w
 
 define Device/asus-wl-520gu
   DEVICE_TITLE := Asus WL-520gU
@@ -320,7 +320,7 @@ define Device/asus-wl-520gu
   $(Device/asus)
   PRODUCTID := "WL520gu     "
 endef
-TARGET_DEVICES += asus-wl-520gu
+# TARGET_DEVICES += asus-wl-520gu
 
 define Device/asus-wl-550ge
   DEVICE_TITLE := Asus WL-550gE
@@ -328,7 +328,7 @@ define Device/asus-wl-550ge
   $(Device/asus)
   PRODUCTID := "WL550gE     "
 endef
-TARGET_DEVICES += asus-wl-550ge
+# TARGET_DEVICES += asus-wl-550ge
 
 define Device/asus-wl-hdd25
   DEVICE_TITLE := Asus WL-HDD25
@@ -336,7 +336,7 @@ define Device/asus-wl-hdd25
   $(Device/asus)
   PRODUCTID := "WLHDD       "
 endef
-TARGET_DEVICES += asus-wl-hdd25
+# TARGET_DEVICES += asus-wl-hdd25
 
 define Device/dlink-dwl-3150
   DEVICE_TITLE := D-Link DWL-3150
@@ -352,7 +352,7 @@ define Device/edimax-ps1208-mfg
   IMAGES := bin
   IMAGE/bin := append-rootfs | trx-with-loader | edimax-bin
 endef
-TARGET_DEVICES += edimax-ps1208-mfg
+# TARGET_DEVICES += edimax-ps1208-mfg
 
 define Device/huawei-e970
   DEVICE_TITLE := Huawei E970
@@ -465,7 +465,7 @@ define Device/motorola-wa840g
   $(Device/motorola)
   MOTOROLA_DEVICE := 2
 endef
-TARGET_DEVICES += motorola-wa840g
+# TARGET_DEVICES += motorola-wa840g
 
 define Device/motorola-we800g
   DEVICE_TITLE := Motorola WE800G
@@ -473,7 +473,7 @@ define Device/motorola-we800g
   $(Device/motorola)
   MOTOROLA_DEVICE := 3
 endef
-TARGET_DEVICES += motorola-we800g
+# TARGET_DEVICES += motorola-we800g
 
 define Device/motorola-wr850g
   DEVICE_TITLE := Motorola WR850G
@@ -481,7 +481,7 @@ define Device/motorola-wr850g
   $(Device/motorola)
   MOTOROLA_DEVICE := 1
 endef
-TARGET_DEVICES += motorola-wr850g
+# TARGET_DEVICES += motorola-wr850g
 
 define Device/netgear-wgr614-v8
   DEVICE_TITLE := Netgear WGR614 v8
@@ -490,7 +490,7 @@ define Device/netgear-wgr614-v8
   NETGEAR_BOARD_ID := U12H072T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wgr614-v8
+# TARGET_DEVICES += netgear-wgr614-v8
 
 define Device/netgear-wgt634u
   DEVICE_TITLE := Netgear WGT634U
@@ -499,7 +499,7 @@ define Device/netgear-wgt634u
   IMAGES := bin
   IMAGE/bin := append-rootfs | trx-with-loader | prepend-with-elf
 endef
-TARGET_DEVICES += netgear-wgt634u
+# TARGET_DEVICES += netgear-wgt634u
 
 define Device/netgear-wndr3300-v1
   DEVICE_TITLE := Netgear WNDR3300 v1
@@ -508,7 +508,7 @@ define Device/netgear-wndr3300-v1
   NETGEAR_BOARD_ID := U12H093T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wndr3300-v1
+# TARGET_DEVICES += netgear-wndr3300-v1
 
 define Device/netgear-wnr834b-v2
   DEVICE_TITLE := Netgear WNR834B v2
@@ -517,7 +517,7 @@ define Device/netgear-wnr834b-v2
   NETGEAR_BOARD_ID := U12H081T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wnr834b-v2
+# TARGET_DEVICES += netgear-wnr834b-v2
 
 define Device/usrobotics-usr5461
   DEVICE_TITLE := USRobotics USR5461
@@ -525,9 +525,9 @@ define Device/usrobotics-usr5461
   IMAGES := bin
   IMAGE/bin := append-rootfs | trx-with-loader | usrobotics-bin
 endef
-TARGET_DEVICES += usrobotics-usr5461
+# TARGET_DEVICES += usrobotics-usr5461
 
-TARGET_DEVICES += standard standard-noloader-gz
+# TARGET_DEVICES += standard standard-noloader-gz
 endif
 
 #################################################
@@ -541,7 +541,7 @@ define Device/asus-rt-ac53u
   $(Device/asus)
   PRODUCTID := RT-AC53U
 endef
-TARGET_DEVICES += asus-rt-ac53u
+# TARGET_DEVICES += asus-rt-ac53u
 
 define Device/asus-rt-ac66u
   DEVICE_TITLE := Asus RT-AC66U
@@ -557,7 +557,7 @@ define Device/asus-rt-n10
   $(Device/asus)
   PRODUCTID := "RT-N10      "
 endef
-TARGET_DEVICES += asus-rt-n10
+# TARGET_DEVICES += asus-rt-n10
 
 define Device/asus-rt-n10p
   DEVICE_TITLE := Asus RT-N10P
@@ -565,14 +565,14 @@ define Device/asus-rt-n10p
   $(Device/asus)
   PRODUCTID := RT-N10P
 endef
-TARGET_DEVICES += asus-rt-n10p
+# TARGET_DEVICES += asus-rt-n10p
 
 define Device/asus-rt-n10p-v2
   DEVICE_TITLE := Asus RT-N10P v2
   $(Device/asus)
   PRODUCTID := RT-N10PV2
 endef
-TARGET_DEVICES += asus-rt-n10p-v2
+# TARGET_DEVICES += asus-rt-n10p-v2
 
 define Device/asus-rt-n10u
   DEVICE_TITLE := Asus RT-N10U
@@ -580,7 +580,7 @@ define Device/asus-rt-n10u
   $(Device/asus)
   PRODUCTID := RT-N10U
 endef
-TARGET_DEVICES += asus-rt-n10u
+# TARGET_DEVICES += asus-rt-n10u
 
 define Device/asus-rt-n10u-b
   DEVICE_TITLE := Asus RT-N10U B
@@ -588,7 +588,7 @@ define Device/asus-rt-n10u-b
   $(Device/asus)
   PRODUCTID := RT-N10U
 endef
-TARGET_DEVICES += asus-rt-n10u-b
+# TARGET_DEVICES += asus-rt-n10u-b
 
 define Device/asus-rt-n12
   DEVICE_TITLE := Asus RT-N12
@@ -596,35 +596,35 @@ define Device/asus-rt-n12
   $(Device/asus)
   PRODUCTID := "RT-N12      "
 endef
-TARGET_DEVICES += asus-rt-n12
+# TARGET_DEVICES += asus-rt-n12
 
 define Device/asus-rt-n12-b1
   DEVICE_TITLE := Asus RT-N12 B1
   $(Device/asus)
   PRODUCTID := RT-N12B1
 endef
-TARGET_DEVICES += asus-rt-n12-b1
+# TARGET_DEVICES += asus-rt-n12-b1
 
 define Device/asus-rt-n12-c1
   DEVICE_TITLE := Asus RT-N12 C1
   $(Device/asus)
   PRODUCTID := RT-N12C1
 endef
-TARGET_DEVICES += asus-rt-n12-c1
+# TARGET_DEVICES += asus-rt-n12-c1
 
 define Device/asus-rt-n12-d1
   DEVICE_TITLE := Asus RT-N12 D1
   $(Device/asus)
   PRODUCTID := RT-N12D1
 endef
-TARGET_DEVICES += asus-rt-n12-d1
+# TARGET_DEVICES += asus-rt-n12-d1
 
 define Device/asus-rt-n12hp
   DEVICE_TITLE := Asus RT-N12HP
   $(Device/asus)
   PRODUCTID := RT-N12HP
 endef
-TARGET_DEVICES += asus-rt-n12hp
+# TARGET_DEVICES += asus-rt-n12hp
 
 define Device/asus-rt-n14uhp
   DEVICE_TITLE := Asus RT-N14UHP
@@ -632,7 +632,7 @@ define Device/asus-rt-n14uhp
   $(Device/asus)
   PRODUCTID := RT-N14UHP
 endef
-TARGET_DEVICES += asus-rt-n14uhp
+# TARGET_DEVICES += asus-rt-n14uhp
 
 define Device/asus-rt-n15u
   DEVICE_TITLE := Asus RT-N15U
@@ -640,7 +640,7 @@ define Device/asus-rt-n15u
   $(Device/asus)
   PRODUCTID := RT-N15U
 endef
-TARGET_DEVICES += asus-rt-n15u
+# TARGET_DEVICES += asus-rt-n15u
 
 define Device/asus-rt-n16
   DEVICE_TITLE := Asus RT-N16
@@ -648,7 +648,7 @@ define Device/asus-rt-n16
   $(Device/asus)
   PRODUCTID := RT-N16
 endef
-TARGET_DEVICES += asus-rt-n16
+# TARGET_DEVICES += asus-rt-n16
 
 define Device/asus-rt-n53
   DEVICE_TITLE := Asus RT-N53
@@ -656,7 +656,7 @@ define Device/asus-rt-n53
   $(Device/asus)
   PRODUCTID := RT-N53
 endef
-TARGET_DEVICES += asus-rt-n53
+# TARGET_DEVICES += asus-rt-n53
 
 define Device/asus-rt-n66u
   DEVICE_TITLE := Asus RT-N66U
@@ -664,7 +664,7 @@ define Device/asus-rt-n66u
   $(Device/asus)
   PRODUCTID := RT-N66U
 endef
-TARGET_DEVICES += asus-rt-n66u
+# TARGET_DEVICES += asus-rt-n66u
 
 define Device/asus-rt-n66w
   DEVICE_TITLE := Asus RT-N66W
@@ -672,7 +672,7 @@ define Device/asus-rt-n66w
   $(Device/asus)
   PRODUCTID := RT-N66U
 endef
-TARGET_DEVICES += asus-rt-n66w
+# TARGET_DEVICES += asus-rt-n66w
 
 define Device/linksys-wrt160n-v3
   DEVICE_TITLE := Linksys WRT160N v3
@@ -821,7 +821,7 @@ define Device/netgear-wgr614-v10-na
   NETGEAR_BOARD_ID := U12H139T01_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wgr614-v10-na
+# TARGET_DEVICES += netgear-wgr614-v10-na
 
 define Device/netgear-wgr614-v10
   DEVICE_TITLE := Netgear WGR614 v10
@@ -829,7 +829,7 @@ define Device/netgear-wgr614-v10
   NETGEAR_BOARD_ID := U12H139T01_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wgr614-v10
+# TARGET_DEVICES += netgear-wgr614-v10
 
 define Device/netgear-wn2500rp-v1
   DEVICE_TITLE := Netgear WN2500RP v1
@@ -838,7 +838,7 @@ define Device/netgear-wn2500rp-v1
   NETGEAR_BOARD_ID := U12H197T00_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wn2500rp-v1
+# TARGET_DEVICES += netgear-wn2500rp-v1
 
 define Device/netgear-wn3000rp
   DEVICE_TITLE := Netgear WN3000RP
@@ -846,7 +846,7 @@ define Device/netgear-wn3000rp
   NETGEAR_BOARD_ID := U12H163T01_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wn3000rp
+# TARGET_DEVICES += netgear-wn3000rp
 
 define Device/netgear-wndr3400-v1
   DEVICE_TITLE := Netgear WNDR3400 v1
@@ -855,7 +855,7 @@ define Device/netgear-wndr3400-v1
   NETGEAR_BOARD_ID := U12H155T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wndr3400-v1
+# TARGET_DEVICES += netgear-wndr3400-v1
 
 define Device/netgear-wndr3400-v2
   DEVICE_TITLE := Netgear WNDR3400 v2
@@ -864,7 +864,7 @@ define Device/netgear-wndr3400-v2
   NETGEAR_BOARD_ID := U12H187T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wndr3400-v2
+# TARGET_DEVICES += netgear-wndr3400-v2
 
 define Device/netgear-wndr3400-v3
   DEVICE_TITLE := Netgear WNDR3400 v3
@@ -873,7 +873,7 @@ define Device/netgear-wndr3400-v3
   NETGEAR_BOARD_ID := U12H208T00_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wndr3400-v3
+# TARGET_DEVICES += netgear-wndr3400-v3
 
 define Device/netgear-wndr3700-v3
   DEVICE_TITLE := Netgear WNDR3700 v3
@@ -882,7 +882,7 @@ define Device/netgear-wndr3700-v3
   NETGEAR_BOARD_ID := U12H194T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wndr3700-v3
+# TARGET_DEVICES += netgear-wndr3700-v3
 
 define Device/netgear-wndr3400-vcna
   DEVICE_TITLE := Netgear WNDR3400 vcna
@@ -900,7 +900,7 @@ define Device/netgear-wndr4000
   NETGEAR_BOARD_ID := U12H181T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wndr4000
+# TARGET_DEVICES += netgear-wndr4000
 
 define Device/netgear-wnr1000-v3
   DEVICE_TITLE := Netgear WNR1000 v3
@@ -908,7 +908,7 @@ define Device/netgear-wnr1000-v3
   NETGEAR_BOARD_ID := U12H139T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wnr1000-v3
+# TARGET_DEVICES += netgear-wnr1000-v3
 
 define Device/netgear-wnr2000v2
   DEVICE_TITLE := Netgear WNR2000 v2
@@ -918,7 +918,7 @@ define Device/netgear-wnr2000v2
   NETGEAR_REGION := 2
   DEFAULT := n
 endef
-TARGET_DEVICES += netgear-wnr2000v2
+# TARGET_DEVICES += netgear-wnr2000v2
 
 define Device/netgear-wnr3500l-v1-na
   DEVICE_TITLE := Netgear WNR3500L v1 North America
@@ -927,7 +927,7 @@ define Device/netgear-wnr3500l-v1-na
   NETGEAR_BOARD_ID := U12H136T99_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wnr3500l-v1-na
+# TARGET_DEVICES += netgear-wnr3500l-v1-na
 
 define Device/netgear-wnr3500l-v1
   DEVICE_TITLE := Netgear WNR3500L v1 Other Regions
@@ -936,7 +936,7 @@ define Device/netgear-wnr3500l-v1
   NETGEAR_BOARD_ID := U12H136T99_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wnr3500l-v1
+# TARGET_DEVICES += netgear-wnr3500l-v1
 
 define Device/netgear-wnr3500l-v2
   DEVICE_TITLE := Netgear WNR3500L v2
@@ -945,7 +945,7 @@ define Device/netgear-wnr3500l-v2
   NETGEAR_BOARD_ID := U12H172T00_NETGEAR
   NETGEAR_REGION := 1
 endef
-TARGET_DEVICES += netgear-wnr3500l-v2
+# TARGET_DEVICES += netgear-wnr3500l-v2
 
 define Device/netgear-wnr3500u
   DEVICE_TITLE := Netgear WNR3500U
@@ -963,7 +963,7 @@ define Device/netgear-wnr3500-v2
   NETGEAR_BOARD_ID := U12H127T00_NETGEAR
   NETGEAR_REGION := 2
 endef
-TARGET_DEVICES += netgear-wnr3500-v2
+# TARGET_DEVICES += netgear-wnr3500-v2
 
 define Device/netgear-wnr3500-v2-vc
   DEVICE_TITLE := Netgear WNR3500 v2 vc
@@ -974,7 +974,7 @@ define Device/netgear-wnr3500-v2-vc
 endef
 #  TARGET_DEVICES += netgear-wnr3500-v2-vc
 
-TARGET_DEVICES += standard standard-noloader-nodictionarylzma
+# TARGET_DEVICES += standard standard-noloader-nodictionarylzma
 endif
 
 #################################################

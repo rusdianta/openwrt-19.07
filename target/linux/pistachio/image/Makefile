@@ -32,7 +32,7 @@ define Device/marduk
   DEVICE_PACKAGES := kmod-tpm-i2c-infineon
 endef
 
-TARGET_DEVICES += marduk
+# TARGET_DEVICES += marduk
 
 
 $(eval $(call BuildImage))

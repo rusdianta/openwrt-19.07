@@ -62,7 +62,7 @@ define Device/963281TAN-generic
   CFE_BOARD_ID := 963281TAN
   CFE_CHIP_ID := 6328
 endef
-TARGET_DEVICES += 963281TAN-generic
+# TARGET_DEVICES += 963281TAN-generic
 
 define Device/96328avng-generic
   $(Device/bcm63xx)
@@ -72,7 +72,7 @@ define Device/96328avng-generic
   CFE_BOARD_ID := 96328avng
   CFE_CHIP_ID := 6328
 endef
-TARGET_DEVICES += 96328avng-generic
+# TARGET_DEVICES += 96328avng-generic
 
 define Device/96338GW-generic
   $(Device/bcm63xx)
@@ -81,7 +81,7 @@ define Device/96338GW-generic
   CFE_BOARD_ID := 6338GW
   CFE_CHIP_ID := 6338
 endef
-TARGET_DEVICES += 96338GW-generic
+# TARGET_DEVICES += 96338GW-generic
 
 define Device/96338W-generic
   $(Device/bcm63xx)
@@ -90,7 +90,7 @@ define Device/96338W-generic
   CFE_BOARD_ID := 6338W
   CFE_CHIP_ID := 6338
 endef
-TARGET_DEVICES += 96338W-generic
+# TARGET_DEVICES += 96338W-generic
 
 define Device/96345GW2-generic
   $(Device/bcm63xx)
@@ -100,7 +100,7 @@ define Device/96345GW2-generic
   CFE_BOARD_ID := 96345GW2
   CFE_CHIP_ID := 6345
 endef
-TARGET_DEVICES += 96345GW2-generic
+# TARGET_DEVICES += 96345GW2-generic
 
 define Device/96348GW-generic
   $(Device/bcm63xx)
@@ -110,7 +110,7 @@ define Device/96348GW-generic
   CFE_BOARD_ID := 96348GW
   CFE_CHIP_ID := 6348
 endef
-TARGET_DEVICES += 96348GW-generic
+# TARGET_DEVICES += 96348GW-generic
 
 define Device/96348GW-10-generic
   $(Device/bcm63xx)
@@ -119,7 +119,7 @@ define Device/96348GW-10-generic
   CFE_BOARD_ID := 96348GW-10
   CFE_CHIP_ID := 6348
 endef
-TARGET_DEVICES += 96348GW-10-generic
+# TARGET_DEVICES += 96348GW-10-generic
 
 define Device/96348GW-11-generic
   $(Device/bcm63xx)
@@ -128,7 +128,7 @@ define Device/96348GW-11-generic
   CFE_BOARD_ID := 96348GW-11
   CFE_CHIP_ID := 6348
 endef
-TARGET_DEVICES += 96348GW-11-generic
+# TARGET_DEVICES += 96348GW-11-generic
 
 define Device/96348R-generic
   $(Device/bcm63xx)
@@ -137,7 +137,7 @@ define Device/96348R-generic
   CFE_BOARD_ID := 96348R
   CFE_CHIP_ID := 6348
 endef
-TARGET_DEVICES += 96348R-generic
+# TARGET_DEVICES += 96348R-generic
 
 define Device/96358VW-generic
   $(Device/bcm63xx)
@@ -146,7 +146,7 @@ define Device/96358VW-generic
   CFE_BOARD_ID := 96358VW
   CFE_CHIP_ID := 6358
 endef
-TARGET_DEVICES += 96358VW-generic
+# TARGET_DEVICES += 96358VW-generic
 
 define Device/96358VW2-generic
   $(Device/bcm63xx)
@@ -155,7 +155,7 @@ define Device/96358VW2-generic
   CFE_BOARD_ID := 96358VW2
   CFE_CHIP_ID := 6358
 endef
-TARGET_DEVICES += 96358VW2-generic
+# TARGET_DEVICES += 96358VW2-generic
 
 define Device/96368MVNgr-generic
   $(Device/bcm63xx)
@@ -164,7 +164,7 @@ define Device/96368MVNgr-generic
   CFE_BOARD_ID := 96368MVNgr
   CFE_CHIP_ID := 6368
 endef
-TARGET_DEVICES += 96368MVNgr-generic
+# TARGET_DEVICES += 96368MVNgr-generic
 
 define Device/96368MVWG-generic
   $(Device/bcm63xx)
@@ -173,7 +173,7 @@ define Device/96368MVWG-generic
   CFE_BOARD_ID := 96368MVWG
   CFE_CHIP_ID := 6368
 endef
-TARGET_DEVICES += 96368MVWG-generic
+# TARGET_DEVICES += 96368MVWG-generic
 
 ### Actiontec ###
 define Device/R1000H
@@ -188,7 +188,7 @@ define Device/R1000H
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES) $(BRCMWL_PACKAGES)
 endef
-TARGET_DEVICES += R1000H
+# TARGET_DEVICES += R1000H
 
 ### ADB ###
 define Device/A4001N
@@ -201,7 +201,7 @@ define Device/A4001N
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES) $(B43_PACKAGES)
 endef
-TARGET_DEVICES += A4001N
+# TARGET_DEVICES += A4001N
 
 define Device/A4001N1
   $(Device/bcm63xx)
@@ -214,7 +214,7 @@ define Device/A4001N1
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES) $(B43_PACKAGES)
 endef
-TARGET_DEVICES += A4001N1
+# TARGET_DEVICES += A4001N1
 
 define Device/AV4202N
   $(Device/bcm63xx)
@@ -226,7 +226,7 @@ define Device/AV4202N
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES) $(B43_PACKAGES)
 endef
-TARGET_DEVICES += AV4202N
+# TARGET_DEVICES += AV4202N
 
 ### Alcatel ###
 define Device/RG100A
@@ -239,7 +239,7 @@ define Device/RG100A
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES) $(B43_PACKAGES)
 endef
-TARGET_DEVICES += RG100A
+# TARGET_DEVICES += RG100A
 
 ### Asmax ###
 define Device/AR1004G
@@ -251,7 +251,7 @@ define Device/AR1004G
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += AR1004G
+# TARGET_DEVICES += AR1004G
 
 ### Belkin ###
 define Device/F5D7633
@@ -264,7 +264,7 @@ define Device/F5D7633
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += F5D7633
+# TARGET_DEVICES += F5D7633
 
 ### Broadcom ###
 define Device/BCM96318REF
@@ -278,7 +278,7 @@ define Device/BCM96318REF
     $(B43_PACKAGES) $(USB2_PACKAGES) \
     kmod-bcm63xx-udc
 endef
-TARGET_DEVICES += BCM96318REF
+# TARGET_DEVICES += BCM96318REF
 
 define Device/BCM96318REF_P300
   $(Device/bcm63xx)
@@ -291,7 +291,7 @@ define Device/BCM96318REF_P300
     $(B43_PACKAGES) $(USB2_PACKAGES) \
     kmod-bcm63xx-udc
 endef
-TARGET_DEVICES += BCM96318REF_P300
+# TARGET_DEVICES += BCM96318REF_P300
 
 define Device/BCM963268BU_P300
   $(Device/bcm63xx)
@@ -304,7 +304,7 @@ define Device/BCM963268BU_P300
     $(USB2_PACKAGES) \
     kmod-bcm63xx-udc
 endef
-TARGET_DEVICES += BCM963268BU_P300
+# TARGET_DEVICES += BCM963268BU_P300
 
 define Device/BCM963269BHR
   $(Device/bcm63xx)
@@ -317,7 +317,7 @@ define Device/BCM963269BHR
     $(USB2_PACKAGES) \
     kmod-bcm63xx-udc
 endef
-TARGET_DEVICES += BCM963269BHR
+# TARGET_DEVICES += BCM963269BHR
 
 ### BT ###
 define Device/HomeHub2A
@@ -330,7 +330,7 @@ define Device/HomeHub2A
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += HomeHub2A
+# TARGET_DEVICES += HomeHub2A
 
 define Device/BTV2110
   $(Device/bcm63xx)
@@ -342,7 +342,7 @@ define Device/BTV2110
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += BTV2110
+# TARGET_DEVICES += BTV2110
 
 define Device/BTV2500V
   $(Device/bcm63xx)
@@ -354,7 +354,7 @@ define Device/BTV2500V
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += BTV2500V
+# TARGET_DEVICES += BTV2500V
 
 ### Comtrend ###
 define Device/AR5315u
@@ -368,7 +368,7 @@ define Device/AR5315u
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += AR5315u
+# TARGET_DEVICES += AR5315u
 
 define Device/AR5381u
   $(Device/bcm63xx)
@@ -381,7 +381,7 @@ define Device/AR5381u
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += AR5381u
+# TARGET_DEVICES += AR5381u
 
 define Device/AR5387un
   $(Device/bcm63xx)
@@ -394,7 +394,7 @@ define Device/AR5387un
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += AR5387un
+# TARGET_DEVICES += AR5387un
 
 define Device/CT-536_CT-5621
   $(Device/bcm63xx)
@@ -405,7 +405,7 @@ define Device/CT-536_CT-5621
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += CT-536_CT-5621
+# TARGET_DEVICES += CT-536_CT-5621
 
 define Device/CT-5365
   $(Device/bcm63xx)
@@ -416,7 +416,7 @@ define Device/CT-5365
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += CT-5365
+# TARGET_DEVICES += CT-5365
 
 define Device/CT-6373
   $(Device/bcm63xx)
@@ -427,7 +427,7 @@ define Device/CT-6373
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += CT-6373
+# TARGET_DEVICES += CT-6373
 
 define Device/VR-3025u
   $(Device/bcm63xx)
@@ -441,7 +441,7 @@ define Device/VR-3025u
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += VR-3025u
+# TARGET_DEVICES += VR-3025u
 
 define Device/VR-3025un
   $(Device/bcm63xx)
@@ -453,7 +453,7 @@ define Device/VR-3025un
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += VR-3025un
+# TARGET_DEVICES += VR-3025un
 
 define Device/VR-3026e
   $(Device/bcm63xx)
@@ -465,7 +465,7 @@ define Device/VR-3026e
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += VR-3026e
+# TARGET_DEVICES += VR-3026e
 
 define Device/WAP-5813n
   $(Device/bcm63xx)
@@ -477,7 +477,7 @@ define Device/WAP-5813n
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += WAP-5813n
+# TARGET_DEVICES += WAP-5813n
 
 ### D-Link ###
 define Device/DSL2640B-B
@@ -583,7 +583,7 @@ define Device/DV-201AMR
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += DV-201AMR
+# TARGET_DEVICES += DV-201AMR
 
 ### Dynalink ###
 define Device/RTA770BW
@@ -597,7 +597,7 @@ define Device/RTA770BW
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += RTA770BW
+# TARGET_DEVICES += RTA770BW
 
 define Device/RTA770W
   $(Device/bcm63xx)
@@ -610,7 +610,7 @@ define Device/RTA770W
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += RTA770W
+# TARGET_DEVICES += RTA770W
 
 define Device/RTA1025W_16
   $(Device/bcm63xx)
@@ -622,7 +622,7 @@ define Device/RTA1025W_16
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += RTA1025W_16
+# TARGET_DEVICES += RTA1025W_16
 
 define Device/RTA1320_16M
   $(Device/bcm63xx)
@@ -632,7 +632,7 @@ define Device/RTA1320_16M
   CFE_CHIP_ID := 6338
   CFE_EXTRAS += --layoutver 5
 endef
-TARGET_DEVICES += RTA1320_16M
+# TARGET_DEVICES += RTA1320_16M
 
 ### Huawei ###
 define Device/HG520v
@@ -742,7 +742,7 @@ define Device/VG50
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += VG50
+# TARGET_DEVICES += VG50
 
 ### Inventel ###
 define Device/livebox
@@ -752,7 +752,7 @@ define Device/livebox
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB1_PACKAGES)
 endef
-TARGET_DEVICES += livebox
+# TARGET_DEVICES += livebox
 
 ### Netgear ###
 define Device/CVG834G
@@ -763,7 +763,7 @@ define Device/CVG834G
   HCS_REV_MIN := 0001
   HCS_REV_MAJ := 0022
 endef
-TARGET_DEVICES += CVG834G
+# TARGET_DEVICES += CVG834G
 
 define Device/DG834GT_PN
   $(Device/bcm63xx)
@@ -774,7 +774,7 @@ define Device/DG834GT_PN
   DEVICE_PACKAGES := \
     $(ATH5K_PACKAGES)
 endef
-TARGET_DEVICES += DG834GT_PN
+# TARGET_DEVICES += DG834GT_PN
 
 define Device/DG834GTv4
   $(Device/bcm63xx)
@@ -786,7 +786,7 @@ define Device/DG834GTv4
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += DG834GTv4
+# TARGET_DEVICES += DG834GTv4
 
 define Device/DGND3700v1
   $(Device/bcm63xx_netgear)
@@ -801,7 +801,7 @@ define Device/DGND3700v1
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += DGND3700v1
+# TARGET_DEVICES += DGND3700v1
 
 define Device/DGND3800B
   $(Device/bcm63xx_netgear)
@@ -816,7 +816,7 @@ define Device/DGND3800B
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += DGND3800B
+# TARGET_DEVICES += DGND3800B
 
 define Device/EVG2000
   $(Device/bcm63xx_netgear)
@@ -831,7 +831,7 @@ define Device/EVG2000
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += EVG2000
+# TARGET_DEVICES += EVG2000
 
 ### NuCom ###
 define Device/R5010UNv2
@@ -845,7 +845,7 @@ define Device/R5010UNv2
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += R5010UNv2
+# TARGET_DEVICES += R5010UNv2
 
 ### Observa ###
 define Device/VH4032N
@@ -860,7 +860,7 @@ define Device/VH4032N
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += VH4032N
+# TARGET_DEVICES += VH4032N
 
 ### Pirelli ###
 define Device/A226G
@@ -873,7 +873,7 @@ define Device/A226G
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += A226G
+# TARGET_DEVICES += A226G
 
 define Device/A226M
   $(Device/bcm63xx)
@@ -885,7 +885,7 @@ define Device/A226M
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += A226M
+# TARGET_DEVICES += A226M
 
 define Device/A226M-FWB
   $(Device/bcm63xx)
@@ -898,7 +898,7 @@ define Device/A226M-FWB
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += A226M-FWB
+# TARGET_DEVICES += A226M-FWB
 
 define Device/AGPF-S0
   $(Device/bcm63xx)
@@ -911,7 +911,7 @@ define Device/AGPF-S0
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += AGPF-S0
+# TARGET_DEVICES += AGPF-S0
 
 ### Sagem ###
 define Device/FAST2404
@@ -923,7 +923,7 @@ define Device/FAST2404
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += FAST2404
+# TARGET_DEVICES += FAST2404
 
 define Device/FAST2504n
   $(Device/bcm63xx)
@@ -934,7 +934,7 @@ define Device/FAST2504n
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += FAST2504n
+# TARGET_DEVICES += FAST2504n
 
 define Device/FAST2604
   $(Device/bcm63xx)
@@ -945,7 +945,7 @@ define Device/FAST2604
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += FAST2604
+# TARGET_DEVICES += FAST2604
 
 define Device/FAST2704N
   $(Device/bcm63xx)
@@ -957,7 +957,7 @@ define Device/FAST2704N
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += FAST2704N
+# TARGET_DEVICES += FAST2704N
 
 define Device/FAST2704V2
   $(Device/bcm63xx)
@@ -969,7 +969,7 @@ define Device/FAST2704V2
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += FAST2704V2
+# TARGET_DEVICES += FAST2704V2
 
 ### Sercomm ###
 define Device/AD1018-SPI_flash
@@ -981,7 +981,7 @@ define Device/AD1018-SPI_flash
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += AD1018-SPI_flash
+# TARGET_DEVICES += AD1018-SPI_flash
 
 ### SFR ###
 define Device/NEUFBOX4-SER
@@ -994,7 +994,7 @@ define Device/NEUFBOX4-SER
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += NEUFBOX4-SER
+# TARGET_DEVICES += NEUFBOX4-SER
 
 define Device/NEUFBOX4-FXC
   $(Device/bcm63xx)
@@ -1006,7 +1006,7 @@ define Device/NEUFBOX4-FXC
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += NEUFBOX4-FXC
+# TARGET_DEVICES += NEUFBOX4-FXC
 
 define Device/NEUFBOX6
   $(Device/bcm63xx)
@@ -1018,7 +1018,7 @@ define Device/NEUFBOX6
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += NEUFBOX6
+# TARGET_DEVICES += NEUFBOX6
 
 define Device/SR102
   $(Device/bcm63xx)
@@ -1030,7 +1030,7 @@ define Device/SR102
   DEVICE_PACKAGES := \
     $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += SR102
+# TARGET_DEVICES += SR102
 
 ### T-Com ###
 define Device/SPW303V
@@ -1045,7 +1045,7 @@ define Device/SPW303V
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += SPW303V
+# TARGET_DEVICES += SPW303V
 
 define Device/SPW500V
   $(Device/bcm63xx)
@@ -1056,7 +1056,7 @@ define Device/SPW500V
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += SPW500V
+# TARGET_DEVICES += SPW500V
 
 ### Tecom ###
 define Device/GW6000
@@ -1068,7 +1068,7 @@ define Device/GW6000
   DEVICE_PACKAGES := \
     $(BRCMWL_PACKAGES) $(USB1_PACKAGES)
 endef
-TARGET_DEVICES += GW6000
+# TARGET_DEVICES += GW6000
 
 define Device/GW6200
   $(Device/bcm63xx)
@@ -1080,7 +1080,7 @@ define Device/GW6200
   DEVICE_PACKAGES := \
     $(BRCMWL_PACKAGES) $(USB1_PACKAGES)
 endef
-TARGET_DEVICES += GW6200
+# TARGET_DEVICES += GW6200
 
 ### Telsey ###
 define Device/CPVA502PLUS
@@ -1093,7 +1093,7 @@ define Device/CPVA502PLUS
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += CPVA502PLUS
+# TARGET_DEVICES += CPVA502PLUS
 
 define Device/CPA-ZNTE60T
   $(Device/bcm63xx)
@@ -1106,7 +1106,7 @@ define Device/CPA-ZNTE60T
   DEVICE_PACKAGES := \
     $(RT63_PACKAGES) $(USB2_PACKAGES)
 endef
-TARGET_DEVICES += CPA-ZNTE60T
+# TARGET_DEVICES += CPA-ZNTE60T
 
 define Device/MAGIC
   $(Device/bcm63xx)
@@ -1118,7 +1118,7 @@ define Device/MAGIC
   DEVICE_PACKAGES := \
     $(RT63_PACKAGES)
 endef
-TARGET_DEVICES += MAGIC
+# TARGET_DEVICES += MAGIC
 
 ### TP-Link ###
 define Device/TD-W8900GB
@@ -1144,7 +1144,7 @@ define Device/USR9108
   DEVICE_PACKAGES := \
     $(B43_PACKAGES) $(USB1_PACKAGES)
 endef
-TARGET_DEVICES += USR9108
+# TARGET_DEVICES += USR9108
 
 ### ZyXEL ###
 define Device/P870HW-51a_v2
@@ -1159,4 +1159,4 @@ define Device/P870HW-51a_v2
   DEVICE_PACKAGES := \
     $(B43_PACKAGES)
 endef
-TARGET_DEVICES += P870HW-51a_v2
+# TARGET_DEVICES += P870HW-51a_v2

@@ -37,7 +37,7 @@ define Device/cisco_on100
   IMAGE/factory.bin := append-kernel | pad-to $$$$(KERNEL_SIZE) | append-ubi
   BOARD_NAME := on100
 endef
-TARGET_DEVICES += cisco_on100
+# TARGET_DEVICES += cisco_on100
 
 define Device/cloudengines_pogoe02
   DEVICE_TITLE := Cloud Engines Pogoplug E02
@@ -45,14 +45,14 @@ define Device/cloudengines_pogoe02
   BOARD_NAME := pogo_e02
   SUPPORTED_DEVICES += pogo_e02
 endef
-TARGET_DEVICES += cloudengines_pogoe02
+# TARGET_DEVICES += cloudengines_pogoe02
 
 define Device/cloudengines_pogoplugv4
   DEVICE_TITLE := Cloud Engines Pogoplug V4
   DEVICE_DTS := kirkwood-pogoplug-series-4
   DEVICE_PACKAGES := kmod-usb3 kmod-gpio-button-hotplug
 endef
-TARGET_DEVICES += cloudengines_pogoplugv4
+# TARGET_DEVICES += cloudengines_pogoplugv4
 
 define Device/iom_iconnect-1.1
   DEVICE_TITLE := Iomega Iconnect
@@ -60,7 +60,7 @@ define Device/iom_iconnect-1.1
   BOARD_NAME := iconnect
   SUPPORTED_DEVICES += iconnect
 endef
-TARGET_DEVICES += iom_iconnect-1.1
+# TARGET_DEVICES += iom_iconnect-1.1
 
 define Device/iom_ix2_200
   DEVICE_TITLE := Iomega StorCenter ix2-200
@@ -76,7 +76,7 @@ define Device/iom_ix2_200
   IMAGE_SIZE := 32505856
   IMAGE/factory.bin := append-kernel | pad-to $$$$(KERNEL_SIZE) | append-ubi | check-size $$$$(IMAGE_SIZE)
 endef
-TARGET_DEVICES += iom_ix2_200
+# TARGET_DEVICES += iom_ix2_200
 
 define Device/linksys_audi
   DEVICE_TITLE := Linksys EA3500 (Audi)
@@ -113,7 +113,7 @@ define Device/raidsonic_ib-nas62x0
   BOARD_NAME := ib62x0
   SUPPORTED_DEVICES += ib62x0
 endef
-TARGET_DEVICES += raidsonic_ib-nas62x0
+# TARGET_DEVICES += raidsonic_ib-nas62x0
 
 define Device/seagate_dockstar
   DEVICE_DTS := kirkwood-dockstar
@@ -121,7 +121,7 @@ define Device/seagate_dockstar
   BOARD_NAME := dockstar
   SUPPORTED_DEVICES += dockstar
 endef
-TARGET_DEVICES += seagate_dockstar
+# TARGET_DEVICES += seagate_dockstar
 
 define Device/seagate_goflexnet
   DEVICE_TITLE := Seagate GoFlexNet
@@ -129,7 +129,7 @@ define Device/seagate_goflexnet
   BOARD_NAME := goflexnet
   SUPPORTED_DEVICES += goflexnet
 endef
-TARGET_DEVICES += seagate_goflexnet
+# TARGET_DEVICES += seagate_goflexnet
 
 define Device/seagate_goflexhome
   DEVICE_TITLE := Seagate GoFlexHome
@@ -137,7 +137,7 @@ define Device/seagate_goflexhome
   BOARD_NAME := goflexhome
   SUPPORTED_DEVICES += goflexhome
 endef
-TARGET_DEVICES += seagate_goflexhome
+# TARGET_DEVICES += seagate_goflexhome
 
 define Device/zyxel_nsa310b
   DEVICE_TITLE := ZyXEL NSA310b
@@ -145,7 +145,7 @@ define Device/zyxel_nsa310b
   DEVICE_PACKAGES := kmod-r8169 kmod-gpio-button-hotplug kmod-hwmon-lm85
   BOARD_NAME := nsa310b
 endef
-TARGET_DEVICES += zyxel_nsa310b
+# TARGET_DEVICES += zyxel_nsa310b
 
 define Device/zyxel_nsa325
   DEVICE_TITLE := ZyXEL NSA325 (v1 and v2)
@@ -153,6 +153,6 @@ define Device/zyxel_nsa325
   DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-rtc-pcf8563 kmod-usb3
   BOARD_NAME := nsa325
 endef
-TARGET_DEVICES += zyxel_nsa325
+# TARGET_DEVICES += zyxel_nsa325
 
 $(eval $(call BuildImage))

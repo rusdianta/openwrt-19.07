@@ -29,7 +29,7 @@ define Device/nsim_hs
 	DEVICE_PROFILE := nsim_hs
 	DEVICE_DTS := nsim_hs_idu
 endef
-TARGET_DEVICES += nsim_hs
+# TARGET_DEVICES += nsim_hs
 endif
 
 # Root FS on SD-card

@@ -92,7 +92,7 @@ define Device/buffalo_wxr-2533dhp
 		sysupgrade-tar rootfs=$$$$@ | append-metadata
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += buffalo_wxr-2533dhp
+# TARGET_DEVICES += buffalo_wxr-2533dhp
 
 define Device/compex_wpq864
 	$(call Device/FitImage)
@@ -103,7 +103,7 @@ define Device/compex_wpq864
 	DEVICE_TITLE := Compex WPQ864
 	DEVICE_PACKAGES := kmod-gpio-beeper
 endef
-TARGET_DEVICES += compex_wpq864
+# TARGET_DEVICES += compex_wpq864
 
 define Device/linksys_ea8500
 	$(call Device/LegacyImage)
@@ -132,7 +132,7 @@ define Device/nec_wg2600hp
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += nec_wg2600hp
+# TARGET_DEVICES += nec_wg2600hp
 
 define Device/netgear_d7800
 	$(call Device/DniImage)
@@ -147,7 +147,7 @@ define Device/netgear_d7800
 	DEVICE_TITLE := Netgear Nighthawk X4 D7800
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += netgear_d7800
+# TARGET_DEVICES += netgear_d7800
 
 define Device/netgear_r7500
 	$(call Device/DniImage)
@@ -162,7 +162,7 @@ define Device/netgear_r7500
 	DEVICE_TITLE := Netgear Nighthawk X4 R7500
 	DEVICE_PACKAGES := ath10k-firmware-qca988x-ct
 endef
-TARGET_DEVICES += netgear_r7500
+# TARGET_DEVICES += netgear_r7500
 
 define Device/netgear_r7500v2
 	$(call Device/DniImage)
@@ -177,7 +177,7 @@ define Device/netgear_r7500v2
 	DEVICE_TITLE := Netgear Nighthawk X4 R7500v2
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct ath10k-firmware-qca988x-ct
 endef
-TARGET_DEVICES += netgear_r7500v2
+# TARGET_DEVICES += netgear_r7500v2
 
 define Device/netgear_r7800
 	$(call Device/DniImage)
@@ -192,7 +192,7 @@ define Device/netgear_r7800
 	DEVICE_TITLE := Netgear Nighthawk X4S R7800
 	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct
 endef
-TARGET_DEVICES += netgear_r7800
+# TARGET_DEVICES += netgear_r7800
 
 define Device/qcom_ipq8064-ap148
 	$(call Device/FitImage)
@@ -206,7 +206,7 @@ define Device/qcom_ipq8064-ap148
 	DEVICE_TITLE := Qualcomm AP148
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += qcom_ipq8064-ap148
+# TARGET_DEVICES += qcom_ipq8064-ap148
 
 define Device/qcom_ipq8064-ap148-legacy
 	$(call Device/LegacyImage)
@@ -219,7 +219,7 @@ define Device/qcom_ipq8064-ap148-legacy
 	DEVICE_TITLE := Qualcomm AP148 (legacy)
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += qcom_ipq8064-ap148-legacy
+# TARGET_DEVICES += qcom_ipq8064-ap148-legacy
 
 define Device/qcom_ipq8064-ap161
 	$(call Device/FitImage)
@@ -232,7 +232,7 @@ define Device/qcom_ipq8064-ap161
 	DEVICE_TITLE := Qualcomm AP161
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += qcom_ipq8064-ap161
+# TARGET_DEVICES += qcom_ipq8064-ap161
 
 define Device/qcom_ipq8064-db149
 	$(call Device/FitImage)
@@ -242,7 +242,7 @@ define Device/qcom_ipq8064-db149
 	DEVICE_TITLE := Qualcomm DB149
 	DEVICE_PACKAGES := ath10k-firmware-qca99x0-ct
 endef
-TARGET_DEVICES += qcom_ipq8064-db149
+# TARGET_DEVICES += qcom_ipq8064-db149
 
 define Device/tplink_c2600
 	$(call Device/TpSafeImage)
@@ -287,6 +287,6 @@ define Device/zyxel_nbg6817
 	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct e2fsprogs kmod-fs-ext4 losetup
 	$(call Device/ZyXELImage)
 endef
-TARGET_DEVICES += zyxel_nbg6817
+# TARGET_DEVICES += zyxel_nbg6817
 
 $(eval $(call BuildImage))

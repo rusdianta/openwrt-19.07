@@ -75,7 +75,7 @@ define Device/red-15w-rev1
   IMAGES := sysupgrade.bin
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
-TARGET_DEVICES += red-15w-rev1
+# TARGET_DEVICES += red-15w-rev1
 
 endif
 
@@ -106,7 +106,7 @@ define Device/ws-ap3710i
   IMAGES := sysupgrade.bin
   IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 endef
-TARGET_DEVICES += ws-ap3710i
+# TARGET_DEVICES += ws-ap3710i
 
 define Device/panda
   DEVICE_TITLE := OCEDO Panda
@@ -120,7 +120,7 @@ define Device/panda
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
   IMAGE/fdt.bin := append-dtb
 endef
-TARGET_DEVICES += panda
+# TARGET_DEVICES += panda
 
 endif
 
@@ -139,7 +139,7 @@ define Device/p2020rdb
   IMAGE/sysupgrade.bin := append-kernel | append-rootfs | \
 	pad-rootfs $$(BLOCKSIZE) | append-metadata
 endef
-TARGET_DEVICES += p2020rdb
+# TARGET_DEVICES += p2020rdb
 
 endif
 

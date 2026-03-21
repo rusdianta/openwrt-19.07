@@ -68,7 +68,7 @@ define Device/8dev_jalapeno
 	PAGESIZE := 2048
 	DEVICE_TITLE := 8devices Jalapeno
 endef
-TARGET_DEVICES += 8dev_jalapeno
+# TARGET_DEVICES += 8dev_jalapeno
 
 define Device/alfa-network_ap120c-ac
 	$(call Device/FitImage)
@@ -92,7 +92,7 @@ define Device/asus_map-ac2200
 	IMAGES := sysupgrade.bin
 	DEVICE_PACKAGES := ipq-wifi-asus_map-ac2200 ath10k-firmware-qca9888-ct kmod-ath3k
 endef
-TARGET_DEVICES += asus_map-ac2200
+# TARGET_DEVICES += asus_map-ac2200
 
 define Device/asus_rt-ac58u
 	$(call Device/FitImageLzma)
@@ -113,7 +113,7 @@ define Device/asus_rt-ac58u
 	DEVICE_PACKAGES := -kmod-ath10k-ct kmod-ath10k-ct-smallbuffers \
 		kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += asus_rt-ac58u
+# TARGET_DEVICES += asus_rt-ac58u
 
 define Device/avm_fritzbox-4040
 	$(call Device/FitImageLzma)
@@ -128,7 +128,7 @@ define Device/avm_fritzbox-4040
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 	DEVICE_PACKAGES := fritz-tffs fritz-caldata
 endef
-TARGET_DEVICES += avm_fritzbox-4040
+# TARGET_DEVICES += avm_fritzbox-4040
 
 define Device/avm_fritzbox-7530
 	$(call Device/FitImageLzma)
@@ -137,7 +137,7 @@ define Device/avm_fritzbox-7530
 	DEVICE_PACKAGES := fritz-caldata fritz-tffs-nand ipq-wifi-avm_fritzbox-7530
 	IMAGES := sysupgrade.bin
 endef
-TARGET_DEVICES += avm_fritzbox-7530
+# TARGET_DEVICES += avm_fritzbox-7530
 
 define Device/avm_fritzrepeater-1200
 	$(call Device/FitImageLzma)
@@ -146,7 +146,7 @@ define Device/avm_fritzrepeater-1200
 	DEVICE_PACKAGES := fritz-caldata fritz-tffs-nand ipq-wifi-avm_fritzrepeater-1200
 	IMAGES := sysupgrade.bin
 endef
-TARGET_DEVICES += avm_fritzrepeater-1200
+# TARGET_DEVICES += avm_fritzrepeater-1200
 
 define Device/avm_fritzrepeater-3000
 	$(call Device/FitImageLzma)
@@ -155,7 +155,7 @@ define Device/avm_fritzrepeater-3000
 	DEVICE_PACKAGES := ath10k-firmware-qca9984-ct fritz-caldata fritz-tffs-nand ipq-wifi-avm_fritzrepeater-3000
 	IMAGES := sysupgrade.bin
 endef
-TARGET_DEVICES += avm_fritzrepeater-3000
+# TARGET_DEVICES += avm_fritzrepeater-3000
 
 define Device/compex_wpj428
 	$(call Device/FitImage)
@@ -169,7 +169,7 @@ define Device/compex_wpj428
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 	DEVICE_PACKAGES := kmod-gpio-beeper
 endef
-TARGET_DEVICES += compex_wpj428
+# TARGET_DEVICES += compex_wpj428
 
 define Device/engenius_eap1300
 	$(call Device/FitImage)
@@ -282,7 +282,7 @@ define Device/meraki_mr33
 	IMAGES = sysupgrade.bin
 	DEVICE_PACKAGES := -swconfig ath10k-firmware-qca9887-ct
 endef
-TARGET_DEVICES += meraki_mr33
+# TARGET_DEVICES += meraki_mr33
 
 define Device/netgear_ex61x0v2
 	$(call Device/DniImage)
@@ -296,14 +296,14 @@ define Device/netgear_ex6100v2
 	DEVICE_DTS := qcom-ipq4018-ex6100v2
 	DEVICE_TITLE := Netgear EX6100v2
 endef
-TARGET_DEVICES += netgear_ex6100v2
+# TARGET_DEVICES += netgear_ex6100v2
 
 define Device/netgear_ex6150v2
 	$(call Device/netgear_ex61x0v2)
 	DEVICE_DTS := qcom-ipq4018-ex6150v2
 	DEVICE_TITLE := Netgear EX6150v2
 endef
-TARGET_DEVICES += netgear_ex6150v2
+# TARGET_DEVICES += netgear_ex6150v2
 
 define Device/openmesh_a42
 	$(call Device/FitImageLzma)
@@ -318,7 +318,7 @@ define Device/openmesh_a42
 	IMAGE/sysupgrade.bin/squashfs := append-rootfs | pad-rootfs | sysupgrade-tar rootfs=$$$$@ | append-metadata
 	DEVICE_PACKAGES := uboot-envtools
 endef
-TARGET_DEVICES += openmesh_a42
+# TARGET_DEVICES += openmesh_a42
 
 define Device/openmesh_a62
 	$(call Device/FitImageLzma)
@@ -334,7 +334,7 @@ define Device/openmesh_a62
 	DEVICE_PACKAGES := ath10k-firmware-qca9888-ct uboot-envtools
 endef
 
-TARGET_DEVICES += openmesh_a62
+# TARGET_DEVICES += openmesh_a62
 
 define Device/qcom_ap-dk01.1-c1
 	DEVICE_TITLE := QCA AP-DK01.1-C1
@@ -347,7 +347,7 @@ define Device/qcom_ap-dk01.1-c1
 	IMAGES := sysupgrade.bin
 	IMAGE/sysupgrade.bin := append-kernel | pad-to $$$${KERNEL_SIZE} | append-rootfs | pad-rootfs | append-metadata
 endef
-TARGET_DEVICES += qcom_ap-dk01.1-c1
+# TARGET_DEVICES += qcom_ap-dk01.1-c1
 
 define Device/qcom_ap-dk04.1-c1
 	$(call Device/FitImage)
@@ -360,7 +360,7 @@ define Device/qcom_ap-dk04.1-c1
 	BOARD_NAME := ap-dk04.1-c1
 	DEVICE_TITLE := QCA AP-DK04.1-C1
 endef
-TARGET_DEVICES += qcom_ap-dk04.1-c1
+# TARGET_DEVICES += qcom_ap-dk04.1-c1
 
 define Device/qxwlan_e2600ac-c1
 	$(call Device/FitImage)
@@ -373,7 +373,7 @@ define Device/qxwlan_e2600ac-c1
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 	DEVICE_PACKAGES := ipq-wifi-qxwlan_e2600ac
 endef
-TARGET_DEVICES += qxwlan_e2600ac-c1
+# TARGET_DEVICES += qxwlan_e2600ac-c1
 
 define Device/qxwlan_e2600ac-c2
 	$(call Device/FitImage)
@@ -385,7 +385,7 @@ define Device/qxwlan_e2600ac-c2
 	DEVICE_TITLE := Qxwlan E2600AC-C2 (nornand flash)
 	DEVICE_PACKAGES := ipq-wifi-qxwlan_e2600ac
 endef
-TARGET_DEVICES += qxwlan_e2600ac-c2
+# TARGET_DEVICES += qxwlan_e2600ac-c2
 
 define Device/zyxel_nbg6617
 	$(call Device/FitImageLzma)
@@ -405,7 +405,7 @@ define Device/zyxel_nbg6617
 	IMAGE/sysupgrade.bin/squashfs := append-rootfs | pad-rootfs | check-size $$$$(ROOTFS_SIZE) | sysupgrade-tar rootfs=$$$$@ | append-metadata
 	DEVICE_PACKAGES := uboot-envtools kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += zyxel_nbg6617
+# TARGET_DEVICES += zyxel_nbg6617
 
 define Device/zyxel_wre6606
 	$(call Device/FitImage)
@@ -416,6 +416,6 @@ define Device/zyxel_wre6606
 	IMAGE/sysupgrade.bin := append-kernel | append-rootfs | pad-rootfs | append-metadata
 	DEVICE_PACKAGES := -kmod-ath10k-ct kmod-ath10k-ct-smallbuffers
 endef
-TARGET_DEVICES += zyxel_wre6606
+# TARGET_DEVICES += zyxel_wre6606
 
 $(eval $(call BuildImage))

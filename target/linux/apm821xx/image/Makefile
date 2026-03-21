@@ -136,7 +136,7 @@ define Device/meraki_mr24
   UBINIZE_OPTS := -E 5
   SUPPORTED_DEVICES += mr24
 endef
-TARGET_DEVICES += meraki_mr24
+# TARGET_DEVICES += meraki_mr24
 
 define Device/meraki_mx60
   DEVICE_TITLE := Cisco Meraki MX60/MX60W
@@ -155,7 +155,7 @@ define Device/meraki_mx60
   UBINIZE_OPTS := -E 5
   SUPPORTED_DEVICES += mx60
 endef
-TARGET_DEVICES += meraki_mx60
+# TARGET_DEVICES += meraki_mx60
 
 define Device/netgear_wndap6x0
   DEVICE_PACKAGES := kmod-eeprom-at24
@@ -177,14 +177,14 @@ define Device/netgear_wndap620
   DEVICE_TITLE := Netgear WNDAP620 - Premium Wireless-N
   DEVICE_DTS := netgear-wndap620
 endef
-TARGET_DEVICES += netgear_wndap620
+# TARGET_DEVICES += netgear_wndap620
 
 define Device/netgear_wndap660
   $(Device/netgear_wndap6x0)
   DEVICE_TITLE := Netgear WNDAP660 - Dual Radio Dual Band Wireless-N
   DEVICE_DTS := netgear-wndap660
 endef
-TARGET_DEVICES += netgear_wndap660
+# TARGET_DEVICES += netgear_wndap660
 
 define Device/netgear_wndr4700
   DEVICE_TITLE := Netgear Centria N900 WNDR4700/WNDR4720
@@ -217,7 +217,7 @@ define Device/netgear_wndr4700
   UBINIZE_OPTS := -E 5
   SUPPORTED_DEVICES += wndr4700
 endef
-TARGET_DEVICES += netgear_wndr4700
+# TARGET_DEVICES += netgear_wndr4700
 
 endif
 
@@ -242,7 +242,7 @@ define Device/wd_mybooklive
   ARTIFACT/apollo3g.dtb := export-dtb
 endef
 
-TARGET_DEVICES += wd_mybooklive
+# TARGET_DEVICES += wd_mybooklive
 
 endif
 

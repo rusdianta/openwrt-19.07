@@ -15,7 +15,7 @@ define Device/br-6475nd
   DEVICE_TITLE := Edimax BR-6475nD
   DEVICE_PACKAGES := swconfig
 endef
-TARGET_DEVICES += br-6475nd
+# TARGET_DEVICES += br-6475nd
 
 define Device/cy-swr1100
   $(Device/seama)
@@ -27,7 +27,7 @@ define Device/cy-swr1100
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 \
 	kmod-usb-ledtrig-usbport swconfig
 endef
-TARGET_DEVICES += cy-swr1100
+# TARGET_DEVICES += cy-swr1100
 
 
 define Device/dir-645
@@ -52,7 +52,7 @@ define Device/belkin_f9k1109v1
   # Stock firmware checks for this uImage image name during upload.
   UIMAGE_NAME := N750F9K1103VB
 endef
-TARGET_DEVICES += belkin_f9k1109v1
+# TARGET_DEVICES += belkin_f9k1109v1
 
 define Device/hpm
   DTS := HPM
@@ -61,7 +61,7 @@ define Device/hpm
   DEVICE_TITLE := Omnima HPM
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2
 endef
-TARGET_DEVICES += hpm
+# TARGET_DEVICES += hpm
 
 
 define Device/rt-n56u
@@ -71,7 +71,7 @@ define Device/rt-n56u
   DEVICE_TITLE := Asus RT-N56U
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 swconfig
 endef
-TARGET_DEVICES += rt-n56u
+# TARGET_DEVICES += rt-n56u
 
 
 define Device/tew-691gr
@@ -83,7 +83,7 @@ define Device/tew-691gr
   DEVICE_TITLE := TRENDnet TEW-691GR
   DEVICE_PACKAGES := swconfig
 endef
-TARGET_DEVICES += tew-691gr
+# TARGET_DEVICES += tew-691gr
 
 
 define Device/tew-692gr
@@ -95,7 +95,7 @@ define Device/tew-692gr
   DEVICE_TITLE := TRENDnet TEW-692GR
   DEVICE_PACKAGES := swconfig
 endef
-TARGET_DEVICES += tew-692gr
+# TARGET_DEVICES += tew-692gr
 
 
 define Device/wlr-6000
@@ -108,7 +108,7 @@ define Device/wlr-6000
   DEVICE_TITLE := Sitecom WLR-6000
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 swconfig
 endef
-TARGET_DEVICES += wlr-6000
+# TARGET_DEVICES += wlr-6000
 
 
 define Device/wmdr-143n
@@ -116,4 +116,4 @@ define Device/wmdr-143n
   BLOCKSIZE := 64k
   DEVICE_TITLE := Loewe WMDR-143N
 endef
-TARGET_DEVICES += wmdr-143n
+# TARGET_DEVICES += wmdr-143n

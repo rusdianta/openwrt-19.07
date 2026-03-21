@@ -176,7 +176,7 @@ define Device/itian_sq201
 	DEVICE_DTS := gemini-sq201
 	DEVICE_PACKAGES += kmod-rt61-pci kmod-usb2-pci
 endef
-TARGET_DEVICES += itian_sq201
+# TARGET_DEVICES += itian_sq201
 
 define Device/raidsonic_ib-4220-b
 	$(Device/itian-raidsonic)
@@ -184,7 +184,7 @@ define Device/raidsonic_ib-4220-b
 	DEVICE_DTS := gemini-nas4220b
 	DEVICE_TYPE := nas
 endef
-TARGET_DEVICES += raidsonic_ib-4220-b
+# TARGET_DEVICES += raidsonic_ib-4220-b
 
 # The wiliboard images need some changes to be functional and buildable.
 #

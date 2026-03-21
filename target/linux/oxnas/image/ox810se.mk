@@ -15,4 +15,4 @@ define Device/wd-mbwe
   DEVICE_TITLE := Western Digital My Book World Edition
   KERNEL := kernel-bin | append-dtb | uImage none
 endef
-TARGET_DEVICES += wd-mbwe
+# TARGET_DEVICES += wd-mbwe

@@ -67,7 +67,7 @@ define Device/rpi
   DEVICE_PACKAGES := brcmfmac-firmware-43430-sdio brcmfmac-board-rpi2 kmod-brcmfmac wpad-basic
 endef
 ifeq ($(SUBTARGET),bcm2708)
-  TARGET_DEVICES += rpi
+# TARGET_DEVICES += rpi
 endif
 
 define Device/rpi-2
@@ -81,7 +81,7 @@ define Device/rpi-2
   DEVICE_PACKAGES := brcmfmac-firmware-43430-sdio brcmfmac-firmware-43455-sdio brcmfmac-board-rpi2 brcmfmac-board-rpi3 kmod-brcmfmac wpad-basic
 endef
 ifeq ($(SUBTARGET),bcm2709)
-  TARGET_DEVICES += rpi-2
+# TARGET_DEVICES += rpi-2
 endif
 
 define Device/rpi-3
@@ -95,7 +95,7 @@ define Device/rpi-3
   DEVICE_PACKAGES := brcmfmac-firmware-43430-sdio brcmfmac-board-rpi2 brcmfmac-firmware-43455-sdio brcmfmac-board-rpi3 kmod-brcmfmac wpad-basic
 endef
 ifeq ($(SUBTARGET),bcm2710)
-  TARGET_DEVICES += rpi-3
+# TARGET_DEVICES += rpi-3
 endif
 
 $(eval $(call BuildImage))

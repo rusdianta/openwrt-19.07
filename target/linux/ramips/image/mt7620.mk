@@ -41,7 +41,7 @@ define Device/ai-br100
   DEVICE_TITLE := Aigale Ai-BR100
   DEVICE_PACKAGES:= kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += ai-br100
+# TARGET_DEVICES += ai-br100
 
 define Device/alfa-network_ac1200rm
   DTS := AC1200RM
@@ -132,14 +132,14 @@ define Device/bdcom_wap2100-sk
   DEVICE_TITLE := BDCOM WAP2100-SK (ZTE ZXECS EBG3130)
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-mt76x2 kmod-mt76x0e kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += bdcom_wap2100-sk
+# TARGET_DEVICES += bdcom_wap2100-sk
 
 define Device/bocco
   DTS := BOCCO
   DEVICE_TITLE := YUKAI Engineering BOCCO
   DEVICE_PACKAGES := kmod-sound-core kmod-sound-mt7620 kmod-i2c-ralink
 endef
-TARGET_DEVICES += bocco
+# TARGET_DEVICES += bocco
 
 define Device/c108
   DTS := C108
@@ -147,7 +147,7 @@ define Device/c108
   DEVICE_TITLE := HNET C108
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += c108
+# TARGET_DEVICES += c108
 
 define Device/cf-wr800n
   DTS := CF-WR800N
@@ -162,7 +162,7 @@ define Device/cs-qr10
 	kmod-sound-core kmod-sound-mt7620 \
 	kmod-i2c-ralink kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += cs-qr10
+# TARGET_DEVICES += cs-qr10
 
 define Device/d240
   DTS := D240
@@ -170,13 +170,13 @@ define Device/d240
   DEVICE_TITLE := Sanlinking Technologies D240
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += d240
+# TARGET_DEVICES += d240
 
 define Device/db-wrt01
   DTS := DB-WRT01
   DEVICE_TITLE := Planex DB-WRT01
 endef
-TARGET_DEVICES += db-wrt01
+# TARGET_DEVICES += db-wrt01
 
 define Device/dch-m225
   $(Device/seama)
@@ -187,7 +187,7 @@ define Device/dch-m225
   DEVICE_TITLE := D-Link DCH-M225
   DEVICE_PACKAGES := kmod-sound-core kmod-sound-mt7620 kmod-i2c-ralink
 endef
-TARGET_DEVICES += dch-m225
+# TARGET_DEVICES += dch-m225
 
 define Device/dir-810l
   DTS := DIR-810L
@@ -294,7 +294,7 @@ define Device/ex2700
 	netgear-dni
   DEVICE_TITLE := Netgear EX2700
 endef
-#TARGET_DEVICES += ex2700
+# TARGET_DEVICES += ex2700
 
 define Device/ex3700-ex3800
   NETGEAR_BOARD_ID := U12H319T00_NETGEAR
@@ -307,7 +307,7 @@ define Device/ex3700-ex3800
   DEVICE_TITLE := Netgear EX3700/EX3800
   SUPPORTED_DEVICES := ex3700
 endef
-TARGET_DEVICES += ex3700-ex3800
+# TARGET_DEVICES += ex3700-ex3800
 
 define Device/gl-mt300a
   DTS := GL-MT300A
@@ -323,7 +323,7 @@ define Device/u25awf-h1
   DEVICE_TITLE := Kimax U25AWF-H1
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += u25awf-h1
+# TARGET_DEVICES += u25awf-h1
 
 define Device/gl-mt300n
   DTS := GL-MT300N
@@ -347,7 +347,7 @@ define Device/hc5661
   DEVICE_TITLE := HiWiFi HC5661
   DEVICE_PACKAGES := kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += hc5661
+# TARGET_DEVICES += hc5661
 
 define Device/hc5761
   DTS := HC5761
@@ -355,7 +355,7 @@ define Device/hc5761
   DEVICE_TITLE := HiWiFi HC5761
   DEVICE_PACKAGES := kmod-mt76x0e kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += hc5761
+# TARGET_DEVICES += hc5761
 
 define Device/hc5861
   DTS := HC5861
@@ -363,7 +363,7 @@ define Device/hc5861
   DEVICE_TITLE := HiWiFi HC5861
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += hc5861
+# TARGET_DEVICES += hc5861
 
 define Device/head-weblink_hdrm200
   DTS := HDRM200
@@ -372,7 +372,7 @@ define Device/head-weblink_hdrm200
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 \
 		     uqmi kmod-usb-serial kmod-usb-serial-option
 endef
-TARGET_DEVICES += head-weblink_hdrm200
+# TARGET_DEVICES += head-weblink_hdrm200
 
 define Device/iodata_wn-ac1167gr
   DTS := WN-AC1167GR
@@ -384,7 +384,7 @@ define Device/iodata_wn-ac1167gr
     elx-header 01040016 8844A2D168B45A2D
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += iodata_wn-ac1167gr
+# TARGET_DEVICES += iodata_wn-ac1167gr
 
 define Device/iodata_wn-ac733gr3
   DTS := WN-AC733GR3
@@ -396,7 +396,7 @@ define Device/iodata_wn-ac733gr3
     elx-header 01040006 8844A2D168B45A2D
   DEVICE_PACKAGES := kmod-mt76x0e kmod-switch-rtl8367b
 endef
-TARGET_DEVICES += iodata_wn-ac733gr3
+# TARGET_DEVICES += iodata_wn-ac733gr3
 
 define Device/kimax_u35wf
   DTS := U35WF
@@ -404,7 +404,7 @@ define Device/kimax_u35wf
   DEVICE_TITLE := Kimax U35WF
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += kimax_u35wf
+# TARGET_DEVICES += kimax_u35wf
 
 define Device/kng_rc
   DTS := kng_rc
@@ -416,7 +416,7 @@ define Device/kng_rc
 	zyimage -d 8997 -v "ZyXEL Keenetic Viva"
   SUPPORTED_DEVICES := kng_rc
 endef
-TARGET_DEVICES += kng_rc
+# TARGET_DEVICES += kng_rc
 
 define Device/kn_rc
   DTS := kn_rc
@@ -427,7 +427,7 @@ define Device/kn_rc
 	zyimage -d 4882 -v "ZyXEL Keenetic Omni"
   SUPPORTED_DEVICES := kn_rc
 endef
-TARGET_DEVICES += kn_rc
+# TARGET_DEVICES += kn_rc
 
 define Device/kn_rf
   DTS := kn_rf
@@ -438,7 +438,7 @@ define Device/kn_rf
 	zyimage -d 2102034 -v "ZyXEL Keenetic Omni II"
   SUPPORTED_DEVICES := kn_rf
 endef
-TARGET_DEVICES += kn_rf
+# TARGET_DEVICES += kn_rf
 
 define Device/microwrt
   DTS := MicroWRT
@@ -446,7 +446,7 @@ define Device/microwrt
   DEVICE_TITLE := Microduino MicroWRT
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += microwrt
+# TARGET_DEVICES += microwrt
 
 define Device/lava_lr-25g001
   $(Device/amit_jboot)
@@ -457,7 +457,7 @@ define Device/lava_lr-25g001
   DLINK_FIRMWARE_SIZE := 0xFE0000
   DEVICE_PACKAGES += kmod-mt76x0e
 endef
-TARGET_DEVICES += lava_lr-25g001
+# TARGET_DEVICES += lava_lr-25g001
 
 define Device/miwifi-mini
   DTS := MIWIFI-MINI
@@ -473,7 +473,7 @@ define Device/mlw221
   DEVICE_TITLE := Kingston MLW221
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += mlw221
+# TARGET_DEVICES += mlw221
 
 define Device/mlwg2
   DTS := MLWG2
@@ -481,20 +481,20 @@ define Device/mlwg2
   DEVICE_TITLE := Kingston MLWG2
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += mlwg2
+# TARGET_DEVICES += mlwg2
 
 define Device/mt7620a
   DTS := MT7620a
   DEVICE_TITLE := MediaTek MT7620a EVB
 endef
-TARGET_DEVICES += mt7620a
+# TARGET_DEVICES += mt7620a
 
 define Device/mt7620a_mt7530
   DTS := MT7620a_MT7530
   DEVICE_TITLE := MediaTek MT7620a + MT7530 EVB
   SUPPORTED_DEVICES := mt7620a_mt7530
 endef
-TARGET_DEVICES += mt7620a_mt7530
+# TARGET_DEVICES += mt7620a_mt7530
 
 define Device/mt7620a_mt7610e
   DTS := MT7620a_MT7610e
@@ -502,34 +502,34 @@ define Device/mt7620a_mt7610e
   DEVICE_PACKAGES := kmod-mt76x0e
   SUPPORTED_DEVICES := mt7620a_mt7610e
 endef
-TARGET_DEVICES += mt7620a_mt7610e
+# TARGET_DEVICES += mt7620a_mt7610e
 
 define Device/mt7620a_v22sg
   DTS := MT7620a_V22SG
   DEVICE_TITLE := MediaTek MT7620a V22SG
   SUPPORTED_DEVICES := mt7620a_v22sg
 endef
-TARGET_DEVICES += mt7620a_v22sg
+# TARGET_DEVICES += mt7620a_v22sg
 
 define Device/mzk-750dhp
   DTS := MZK-750DHP
   DEVICE_TITLE := Planex MZK-750DHP
   DEVICE_PACKAGES := kmod-mt76x0e
 endef
-TARGET_DEVICES += mzk-750dhp
+# TARGET_DEVICES += mzk-750dhp
 
 define Device/mzk-ex300np
   DTS := MZK-EX300NP
   DEVICE_TITLE := Planex MZK-EX300NP
 endef
-TARGET_DEVICES += mzk-ex300np
+# TARGET_DEVICES += mzk-ex300np
 
 define Device/mzk-ex750np
   DTS := MZK-EX750NP
   DEVICE_TITLE := Planex MZK-EX750NP
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += mzk-ex750np
+# TARGET_DEVICES += mzk-ex750np
 
 define Device/na930
   DTS := NA930
@@ -537,7 +537,7 @@ define Device/na930
   DEVICE_TITLE := Sercomm NA930
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += na930
+# TARGET_DEVICES += na930
 
 define Device/oy-0001
   DTS := OY-0001
@@ -545,14 +545,14 @@ define Device/oy-0001
   DEVICE_TITLE := Oh Yeah OY-0001
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += oy-0001
+# TARGET_DEVICES += oy-0001
 
 define Device/psg1208
   DTS := PSG1208
   DEVICE_TITLE := Phicomm PSG1208
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += psg1208
+# TARGET_DEVICES += psg1208
 
 define Device/psg1218a
   DTS := PSG1218A
@@ -560,7 +560,7 @@ define Device/psg1218a
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += psg1218
 endef
-TARGET_DEVICES += psg1218a
+# TARGET_DEVICES += psg1218a
 
 define Device/psg1218b
   DTS := PSG1218B
@@ -568,7 +568,7 @@ define Device/psg1218b
   DEVICE_PACKAGES := kmod-mt76x2
   SUPPORTED_DEVICES += psg1218
 endef
-TARGET_DEVICES += psg1218b
+# TARGET_DEVICES += psg1218b
 
 define Device/phicomm_k2g
   DTS := K2G
@@ -576,27 +576,27 @@ define Device/phicomm_k2g
   DEVICE_TITLE := Phicomm K2G
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += phicomm_k2g
+# TARGET_DEVICES += phicomm_k2g
 
 define Device/rp-n53
   DTS := RP-N53
   DEVICE_TITLE := Asus RP-N53
   DEVICE_PACKAGES := kmod-rt2800-pci
 endef
-TARGET_DEVICES += rp-n53
+# TARGET_DEVICES += rp-n53
 
 define Device/rt-n12p
   DTS := RT-N12-PLUS
   DEVICE_TITLE := Asus RT-N11P/RT-N12+/RT-N12Eb1
 endef
-TARGET_DEVICES += rt-n12p
+# TARGET_DEVICES += rt-n12p
 
 define Device/rt-n14u
   DTS := RT-N14U
   DEVICE_TITLE := Asus RT-N14u
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += rt-n14u
+# TARGET_DEVICES += rt-n14u
 
 define Device/rt-ac51u
   DTS := RT-AC51U
@@ -604,14 +604,14 @@ define Device/rt-ac51u
   DEVICE_TITLE := Asus RT-AC51U
   DEVICE_PACKAGES := kmod-mt76x0e kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += rt-ac51u
+# TARGET_DEVICES += rt-ac51u
 
 define Device/tiny-ac
   DTS := TINY-AC
   DEVICE_TITLE := Dovado Tiny AC
   DEVICE_PACKAGES := kmod-mt76x0e kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += tiny-ac
+# TARGET_DEVICES += tiny-ac
 
 define Device/edimax_br-6478ac-v2
   DTS := BR-6478AC-V2
@@ -623,7 +623,7 @@ define Device/edimax_br-6478ac-v2
 	append-metadata | check-size $$$$(IMAGE_SIZE)
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += edimax_br-6478ac-v2
+# TARGET_DEVICES += edimax_br-6478ac-v2
 
 define Device/tplink_c2-v1
   $(Device/Archer)
@@ -654,7 +654,7 @@ define Device/vonets_var11n-300
   BLOCKSIZE := 4k
   DEVICE_TITLE := Vonets VAR11N-300
 endef
-TARGET_DEVICES += vonets_var11n-300
+# TARGET_DEVICES += vonets_var11n-300
 
 define Device/ravpower_wd03
   DTS := WD03
@@ -662,7 +662,7 @@ define Device/ravpower_wd03
   DEVICE_TITLE := Ravpower WD03
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += ravpower_wd03
+# TARGET_DEVICES += ravpower_wd03
 
 define Device/whr-1166d
   DTS := WHR-1166D
@@ -670,14 +670,14 @@ define Device/whr-1166d
   DEVICE_TITLE := Buffalo WHR-1166D
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += whr-1166d
+# TARGET_DEVICES += whr-1166d
 
 define Device/whr-300hp2
   DTS := WHR-300HP2
   IMAGE_SIZE := 6848k
   DEVICE_TITLE := Buffalo WHR-300HP2
 endef
-TARGET_DEVICES += whr-300hp2
+# TARGET_DEVICES += whr-300hp2
 
 define Device/whr-600d
   DTS := WHR-600D
@@ -685,13 +685,13 @@ define Device/whr-600d
   DEVICE_TITLE := Buffalo WHR-600D
   DEVICE_PACKAGES := kmod-rt2800-pci
 endef
-TARGET_DEVICES += whr-600d
+# TARGET_DEVICES += whr-600d
 
 define Device/wmr-300
   DTS := WMR-300
   DEVICE_TITLE := Buffalo WMR-300
 endef
-TARGET_DEVICES += wmr-300
+# TARGET_DEVICES += wmr-300
 
 define Device/wn3000rpv3
   NETGEAR_HW_ID := 29764836+8+0+32+2x2+0
@@ -704,7 +704,7 @@ define Device/wn3000rpv3
 	netgear-dni
   DEVICE_TITLE := Netgear WN3000RPv3
 endef
-TARGET_DEVICES += wn3000rpv3
+# TARGET_DEVICES += wn3000rpv3
 
 define Device/wrh-300cr
   DTS := WRH-300CR
@@ -715,7 +715,7 @@ define Device/wrh-300cr
   DEVICE_TITLE := Elecom WRH-300CR
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += wrh-300cr
+# TARGET_DEVICES += wrh-300cr
 
 define Device/wrtnode
   DTS := WRTNODE
@@ -723,7 +723,7 @@ define Device/wrtnode
   DEVICE_TITLE := WRTNode
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += wrtnode
+# TARGET_DEVICES += wrtnode
 
 define Device/wt3020-4M
   DTS := WT3020-4M
@@ -735,7 +735,7 @@ define Device/wt3020-4M
 	poray-header -B WT3020 -F 4M
   DEVICE_TITLE := Nexx WT3020 (4MB)
 endef
-#TARGET_DEVICES += wt3020-4M
+# TARGET_DEVICES += wt3020-4M
 
 define Device/wt3020-8M
   DTS := WT3020-8M
@@ -746,7 +746,7 @@ define Device/wt3020-8M
   DEVICE_TITLE := Nexx WT3020 (8MB)
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += wt3020-8M
+# TARGET_DEVICES += wt3020-8M
 
 define Device/y1
   DTS := Y1
@@ -754,7 +754,7 @@ define Device/y1
   DEVICE_TITLE := Lenovo Y1
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += y1
+# TARGET_DEVICES += y1
 
 define Device/y1s
   DTS := Y1S
@@ -762,7 +762,7 @@ define Device/y1s
   DEVICE_TITLE := Lenovo Y1S
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += y1s
+# TARGET_DEVICES += y1s
 
 define Device/youku-yk1
   DTS := YOUKU-YK1
@@ -770,7 +770,7 @@ define Device/youku-yk1
   DEVICE_TITLE := YOUKU YK1
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += youku-yk1
+# TARGET_DEVICES += youku-yk1
 
 define Device/we1026-5g-16m
   DTS := WE1026-5G-16M
@@ -779,34 +779,34 @@ define Device/we1026-5g-16m
   DEVICE_TITLE := Zbtlink ZBT-WE1026-5G (16M)
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += we1026-5g-16m
+# TARGET_DEVICES += we1026-5g-16m
 
 define Device/zbt-ape522ii
   DTS := ZBT-APE522II
   DEVICE_TITLE := Zbtlink ZBT-APE522II
   DEVICE_PACKAGES := kmod-mt76x2
 endef
-TARGET_DEVICES += zbt-ape522ii
+# TARGET_DEVICES += zbt-ape522ii
 
 define Device/zbt-cpe102
   DTS := ZBT-CPE102
   DEVICE_TITLE := Zbtlink ZBT-CPE102
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += zbt-cpe102
+# TARGET_DEVICES += zbt-cpe102
 
 define Device/zbt-wa05
   DTS := ZBT-WA05
   DEVICE_TITLE := Zbtlink ZBT-WA05
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += zbt-wa05
+# TARGET_DEVICES += zbt-wa05
 
 define Device/zbt-we2026
   DTS := ZBT-WE2026
   DEVICE_TITLE := Zbtlink ZBT-WE2026
 endef
-TARGET_DEVICES += zbt-we2026
+# TARGET_DEVICES += zbt-we2026
 
 define Device/zbt-we826-16M
   DTS := ZBT-WE826-16M
@@ -815,7 +815,7 @@ define Device/zbt-we826-16M
   DEVICE_TITLE := Zbtlink ZBT-WE826 (16M)
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += zbt-we826-16M
+# TARGET_DEVICES += zbt-we826-16M
 
 define Device/zbt-we826-32M
   DTS := ZBT-WE826-32M
@@ -823,7 +823,7 @@ define Device/zbt-we826-32M
   DEVICE_TITLE := Zbtlink ZBT-WE826 (32M)
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620
 endef
-TARGET_DEVICES += zbt-we826-32M
+# TARGET_DEVICES += zbt-we826-32M
 
 define Device/zbtlink_zbt-we826-e
   DTS := ZBT-WE826-E
@@ -832,18 +832,18 @@ define Device/zbtlink_zbt-we826-e
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci kmod-sdhci-mt7620 uqmi \
 		     kmod-usb-serial kmod-usb-serial-option
 endef
-TARGET_DEVICES += zbtlink_zbt-we826-e
+# TARGET_DEVICES += zbtlink_zbt-we826-e
 
 define Device/zbt-wr8305rt
   DTS := ZBT-WR8305RT
   DEVICE_TITLE := Zbtlink ZBT-WR8305RT
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += zbt-wr8305rt
+# TARGET_DEVICES += zbt-wr8305rt
 
 define Device/zte-q7
   DTS := ZTE-Q7
   DEVICE_TITLE := ZTE Q7
   DEVICE_PACKAGES := kmod-usb2 kmod-usb-ohci
 endef
-TARGET_DEVICES += zte-q7
+# TARGET_DEVICES += zte-q7

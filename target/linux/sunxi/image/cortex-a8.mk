@@ -14,7 +14,7 @@ define Device/sun4i-a10-olinuxino-lime
   SUNXI_DTS:=sun4i-a10-olinuxino-lime
 endef
 
-TARGET_DEVICES += sun4i-a10-olinuxino-lime
+# TARGET_DEVICES += sun4i-a10-olinuxino-lime
 
 
 define Device/sun5i-a13-olimex-som
@@ -24,7 +24,7 @@ define Device/sun5i-a13-olimex-som
   SUNXI_DTS:=sun5i-a13-olinuxino
 endef
 
-TARGET_DEVICES += sun5i-a13-olimex-som
+# TARGET_DEVICES += sun5i-a13-olimex-som
 
 
 define Device/sun5i-a13-olinuxino
@@ -34,7 +34,7 @@ define Device/sun5i-a13-olinuxino
   SUNXI_DTS:=sun5i-a13-olinuxino
 endef
 
-TARGET_DEVICES += sun5i-a13-olinuxino
+# TARGET_DEVICES += sun5i-a13-olinuxino
 
 
 define Device/sun4i-a10-cubieboard
@@ -44,7 +44,7 @@ define Device/sun4i-a10-cubieboard
   SUNXI_DTS:=sun4i-a10-cubieboard
 endef
 
-TARGET_DEVICES += sun4i-a10-cubieboard
+# TARGET_DEVICES += sun4i-a10-cubieboard
 
 
 define Device/sun4i-a10-pcduino
@@ -54,7 +54,7 @@ define Device/sun4i-a10-pcduino
   SUNXI_DTS:=sun4i-a10-pcduino
 endef
 
-TARGET_DEVICES += sun4i-a10-pcduino
+# TARGET_DEVICES += sun4i-a10-pcduino
 
 
 define Device/sun4i-a10-marsboard
@@ -64,6 +64,6 @@ define Device/sun4i-a10-marsboard
   SUNXI_DTS:=sun4i-a10-marsboard
 endef
 
-TARGET_DEVICES += sun4i-a10-marsboard
+# TARGET_DEVICES += sun4i-a10-marsboard
 
 endif

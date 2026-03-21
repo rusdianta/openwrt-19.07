@@ -81,14 +81,14 @@ define Device/rw2458n
   DEVICE_TITLE := Ubiquiti RW2458N
   BOARDNAME := RW2458N
 endef
-TARGET_DEVICES += rw2458n
+# TARGET_DEVICES += rw2458n
 
 define Device/ubnt-airrouter
   $(Device/ubnt-xm)
   DEVICE_TITLE := Ubiquiti AirRouter
   BOARDNAME := UBNT-AR
 endef
-TARGET_DEVICES += ubnt-airrouter
+# TARGET_DEVICES += ubnt-airrouter
 
 define Device/ubnt-bullet-m
   $(Device/ubnt-xm)
@@ -231,7 +231,7 @@ define Device/ubnt-air-gateway
   UBNT_CHIP := ar933x
   CONSOLE := ttyATH0,115200
 endef
-TARGET_DEVICES += ubnt-air-gateway
+# TARGET_DEVICES += ubnt-air-gateway
 
 define Device/ubnt-air-gateway-pro
   $(Device/ubnt-xm)
@@ -240,7 +240,7 @@ define Device/ubnt-air-gateway-pro
   UBNT_TYPE := AirGWP
   UBNT_CHIP := ar934x
 endef
-TARGET_DEVICES += ubnt-air-gateway-pro
+# TARGET_DEVICES += ubnt-air-gateway-pro
 
 define Device/ubdev01
   $(Device/ubnt-xm)
@@ -249,7 +249,7 @@ define Device/ubdev01
   BOARDNAME := UBNT-UF
   UBNT_BOARD := UBDEV01
 endef
-TARGET_DEVICES += ubdev01
+# TARGET_DEVICES += ubdev01
 
 define Device/ubnt-routerstation
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2
@@ -270,7 +270,7 @@ define Device/ubnt-rs
   UBNT_TYPE := RSx
   UBNT_CHIP := ar7100
 endef
-TARGET_DEVICES += ubnt-rs
+# TARGET_DEVICES += ubnt-rs
 
 define Device/ubnt-rspro
   $(Device/ubnt-routerstation)
@@ -281,7 +281,7 @@ define Device/ubnt-rspro
   UBNT_TYPE := RSPRO
   UBNT_CHIP := ar7100pro
 endef
-TARGET_DEVICES += ubnt-rspro
+# TARGET_DEVICES += ubnt-rspro
 
 define Device/ubnt-ls-sr71
   $(Device/ubnt-routerstation)
@@ -291,7 +291,7 @@ define Device/ubnt-ls-sr71
   UBNT_TYPE := LS-SR71
   UBNT_CHIP := ar7100
 endef
-TARGET_DEVICES += ubnt-ls-sr71
+# TARGET_DEVICES += ubnt-ls-sr71
 
 define Device/ubnt-uap-pro
   DEVICE_TITLE := Ubiquiti UAP Pro

@@ -10,7 +10,7 @@ define Device/buffalo_whr-g301n
   IMAGE/tftp.bin := $$(IMAGE/default) | buffalo-tftp-header
   SUPPORTED_DEVICES += whr-g301n
 endef
-TARGET_DEVICES += buffalo_whr-g301n
+# TARGET_DEVICES += buffalo_whr-g301n
 
 define Device/pqi_air-pen
   ATH_SOC := ar9330
@@ -19,4 +19,4 @@ define Device/pqi_air-pen
   IMAGE_SIZE := 7680k
   SUPPORTED_DEVICES += pqi-air-pen
 endef
-TARGET_DEVICES += pqi_air-pen
+# TARGET_DEVICES += pqi_air-pen

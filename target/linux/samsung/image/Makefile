@@ -20,6 +20,6 @@ define Device/tq210
   DEVICE_DTS := TQ210
   DEVICE_TITLE := TQ210
 endef
-TARGET_DEVICES += tq210
+# TARGET_DEVICES += tq210
 
 $(eval $(call BuildImage))

@@ -83,7 +83,7 @@ define Device/ubnt_airrouter
   DEVICE_TITLE := Ubiquiti AirRouter
   SUPPORTED_DEVICES += airrouter
 endef
-TARGET_DEVICES += ubnt_airrouter
+# TARGET_DEVICES += ubnt_airrouter
 
 define Device/ubnt_bullet-m
   $(Device/ubnt-xm)
@@ -256,7 +256,7 @@ define Device/ubnt_routerstation
   DEVICE_PACKAGES += -swconfig
   SUPPORTED_DEVICES += routerstation
 endef
-TARGET_DEVICES += ubnt_routerstation
+# TARGET_DEVICES += ubnt_routerstation
 
 define Device/ubnt_routerstation-pro
   $(Device/ubnt_routerstation_common)
@@ -266,7 +266,7 @@ define Device/ubnt_routerstation-pro
   UBNT_CHIP := ar7100pro
   SUPPORTED_DEVICES += routerstation-pro
 endef
-TARGET_DEVICES += ubnt_routerstation-pro
+# TARGET_DEVICES += ubnt_routerstation-pro
 
 define Device/ubnt_acb-isp
   $(Device/ubnt)

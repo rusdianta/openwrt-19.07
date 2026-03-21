@@ -6,4 +6,4 @@ define Device/MTK-RFB1
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb3 \
 			kmod-ata-core kmod-ata-ahci-mtk 
 endef
-TARGET_DEVICES += MTK-RFB1
+# TARGET_DEVICES += MTK-RFB1
