@@ -267,6 +267,17 @@ define Device/tplink_tl-wr802n-v2
 endef
 TARGET_DEVICES += tplink_tl-wr802n-v2
 
+define Device/tplink_tl-wr840n-v2
+  $(Device/tplink-4mlzma)
+  ATH_SOC := qca9533
+  DEVICE_TITLE := TP-LINK TL-WR840N v2
+  TPLINK_HWID := 0x08400002
+  SUPPORTED_DEVICES += tl-wr840n-v2
+  IMAGES += factory-eu.bin
+  IMAGE/factory-eu.bin := append-rootfs | mktplinkfw factory -C EU
+endef
+TARGET_DEVICES += tplink_tl-wr840n-v2
+
 define Device/tplink_tl-wr841-v5
   $(Device/tplink-4m)
   ATH_SOC := ar7240
