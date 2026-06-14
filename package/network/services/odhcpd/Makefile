@@ -12,9 +12,9 @@ PKG_RELEASE:=3
 
 PKG_SOURCE_PROTO:=git
 #PKG_SOURCE_URL=$(PROJECT_GIT)/project/odhcpd.git
-PKG_SOURCE_URL:=https://github.com/openwrt/odhcpd.git
-PKG_SOURCE_DATE:=2020-06-24
-PKG_SOURCE_VERSION:=059844e4399be41ed5be413a45f7597ce105b5b4
+PKG_SOURCE_URL:=https://github.com/rusdianta/odhcpd.git
+PKG_SOURCE_DATE:=2020-11-16
+PKG_SOURCE_VERSION:=9e2039893b5070774896b48ada1a84773d1eea57
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Hans Dedecker <dedeckeh@gmail.com>
