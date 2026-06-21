@@ -12,9 +12,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 #PKG_SOURCE_URL=$(PROJECT_GIT)/project/uhttpd.git
-PKG_SOURCE_URL:=https://github.com/rusdianta/uhttpd.git
-PKG_SOURCE_DATE:=2020-10-05
-PKG_SOURCE_VERSION:=0e50e63bcf6cc757a51d25cc0ddaf3684c341f0d
+PKG_SOURCE_URL:=https://github.com/openwrt/uhttpd.git
+PKG_SOURCE_DATE:=2020-11-23
+PKG_SOURCE_VERSION:=f53a63999784bcb7dc513e221f3f25dd3de2f35e
 PKG_MIRROR_HASH:=skip
 PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
 PKG_LICENSE:=ISC
