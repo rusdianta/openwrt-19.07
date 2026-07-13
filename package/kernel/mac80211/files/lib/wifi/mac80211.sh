@@ -132,6 +132,7 @@ detect_mac80211() {
 			set wireless.default_radio${devidx}.short_preamble=0
 			set wireless.default_radio${devidx}.wpa_group_rekey=0
 			set wireless.default_radio${devidx}.disassoc_low_ack=0
+			set wireless.default_radio${devidx}.skip_inactivity_poll=1
 EOF
 		uci -q commit wireless
 
