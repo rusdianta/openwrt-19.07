@@ -17,9 +17,10 @@ uci set wireless.@wifi-iface[0].encryption="psk2+ccmp"
 uci set wireless.@wifi-iface[0].key="12345678"
 uci set wireless.@wifi-iface[0].dtim_period="1"
 uci set wireless.@wifi-iface[0].short_preamble="0"
-uci set wireless.@wifi-iface[0].wpa_group_rekey="0"
+uci set wireless.@wifi-iface[0].wpa_group_rekey="86400"
 uci set wireless.@wifi-iface[0].disassoc_low_ack="0"
-uci set wireless.@wifi-iface[0].skip_inactivity_poll="1"
+uci set wireless.@wifi-iface[0].skip_inactivity_poll="0"
+uci set wireless.@wifi-iface[0].max_inactivity="600"
 uci commit wireless
 
 exit 0
