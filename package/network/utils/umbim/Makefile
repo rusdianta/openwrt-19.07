@@ -5,9 +5,9 @@ PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
 #PKG_SOURCE_URL=$(PROJECT_GIT)/project/umbim.git
-PKG_SOURCE_URL:=https://github.com/openwrt/umbim.git
-PKG_SOURCE_DATE:=2019-09-11
-PKG_SOURCE_VERSION:=184b707ddaa0acee84d02e0ffe599cb8b67782bd
+PKG_SOURCE_URL:=https://github.com/rusdianta/umbim.git
+PKG_SOURCE_DATE:=2022-08-13
+PKG_SOURCE_VERSION:=a48e8d8b0f21998907b8d86d5bbc836de3813166
 PKG_MIRROR_HASH:=skip
 PKG_MAINTAINER:=John Crispin <john@phrozen.org>
 
