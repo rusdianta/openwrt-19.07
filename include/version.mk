@@ -28,6 +28,8 @@ sanitize = $(call tolower,$(subst _,-,$(subst $(space),-,$(1))))
 VERSION_NUMBER:=$(call qstrip,$(CONFIG_VERSION_NUMBER))
 VERSION_NUMBER:=$(if $(VERSION_NUMBER),$(VERSION_NUMBER),19.07.10)
 
+BUILD_DATE:=$(shell date '+%Y%m%d.%H%M%S')
+
 VERSION_CODE:=$(call qstrip,$(CONFIG_VERSION_CODE))
 VERSION_CODE:=$(if $(VERSION_CODE),$(VERSION_CODE),r11427-9ce6aa9d8d)
 
@@ -92,6 +94,7 @@ endef
 VERSION_SED_SCRIPT:=$(SED) 's,%U,$(call sed_escape,$(VERSION_REPO)),g' \
 	-e 's,%V,$(call sed_escape,$(VERSION_NUMBER)),g' \
 	-e 's,%v,\L$(call sed_escape,$(subst $(space),_,$(VERSION_NUMBER))),g' \
+	-e 's,%B,$(call sed_escape,$(BUILD_DATE)),g' \
 	-e 's,%C,$(call sed_escape,$(VERSION_CODE)),g' \
 	-e 's,%c,\L$(call sed_escape,$(subst $(space),_,$(VERSION_CODE))),g' \
 	-e 's,%D,$(call sed_escape,$(VERSION_DIST)),g' \
