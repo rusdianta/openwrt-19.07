@@ -11,10 +11,10 @@ PKG_NAME:=umdns
 PKG_RELEASE:=1
 
 #PKG_SOURCE_URL=$(PROJECT_GIT)/project/mdnsd.git
-PKG_SOURCE_URL:=https://github.com/openwrt/mdnsd.git
+PKG_SOURCE_URL:=https://github.com/rusdianta/mdnsd.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2020-07-19
-PKG_SOURCE_VERSION:=eadfa26a5cf31e27f551c37c1362983e9db37c4d
+PKG_SOURCE_DATE:=2020-10-13
+PKG_SOURCE_VERSION:=7912c7297adabb24a1cc9a48ef9435d2453f0dfa
 PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=John Crispin <john@phrozen.org>
