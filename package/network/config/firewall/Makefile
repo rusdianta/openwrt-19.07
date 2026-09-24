@@ -13,9 +13,9 @@ PKG_RELEASE:=3
 
 PKG_SOURCE_PROTO:=git
 #PKG_SOURCE_URL=$(PROJECT_GIT)/project/firewall3.git
-PKG_SOURCE_URL:=https://github.com/openwrt/firewall3.git
-PKG_SOURCE_DATE:=2020-03-13
-PKG_SOURCE_VERSION:=f87d0b0f607420424cfcb4ff5a376d7659fa5b6b
+PKG_SOURCE_URL:=https://github.com/rusdianta/firewall3.git
+PKG_SOURCE_DATE:=2020-06-03
+PKG_SOURCE_VERSION:=619c42c4797bd4382ec6380b54291ce745b111ee
 PKG_MIRROR_HASH:=skip
 PKG_MAINTAINER:=Jo-Philipp Wich <jo@mein.io>
 PKG_LICENSE:=ISC
