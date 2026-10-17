@@ -129,7 +129,7 @@ detect_mac80211() {
 			set wireless.default_radio${devidx}.encryption=psk2+ccmp
 			set wireless.default_radio${devidx}.key=12345678
 			set wireless.default_radio${devidx}.dtim_period=1
-			set wireless.default_radio${devidx}.short_preamble=0
+			set wireless.default_radio${devidx}.short_preamble=1
 			set wireless.default_radio${devidx}.wpa_group_rekey=86400
 			set wireless.default_radio${devidx}.disassoc_low_ack=0
 			set wireless.default_radio${devidx}.skip_inactivity_poll=0
