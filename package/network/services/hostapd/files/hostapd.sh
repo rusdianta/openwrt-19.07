@@ -135,7 +135,7 @@ hostapd_prepare_device_config() {
 
 	[ "$hwmode" = "g" ] && {
 		[ "$legacy_rates" -eq 0 ] && set_default rate_list "6000 9000 12000 18000 24000 36000 48000 54000"
-		[ -n "$require_mode" ] && set_default basic_rate_list "6000 12000 24000"
+		[ -n "$require_mode" ] && set_default basic_rate_list "6000"
 	}
 
 	case "$require_mode" in
