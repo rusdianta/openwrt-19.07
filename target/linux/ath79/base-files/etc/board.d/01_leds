@@ -123,6 +123,7 @@ tplink,archer-c6-v2)
 	ucidef_set_led_switch "wan" "WAN" "tp-link:green:wan" "switch0" "0x02"
 	;;
 tplink,archer-c25-v1|\
+tplink,tl-mr3420-v3|\
 tplink,tl-wr841-v9|\
 tplink,tl-wr841-v10|\
 tplink,tl-wr841-v11|\
