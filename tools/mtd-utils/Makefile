@@ -10,7 +10,8 @@ PKG_NAME:=mtd-utils
 PKG_VERSION:=2.1.1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
-PKG_SOURCE_URL:=ftp://ftp.infradead.org/pub/mtd-utils/
+#PKG_SOURCE_URL:=ftp://ftp.infradead.org/pub/mtd-utils/
+PKG_SOURCE_URL:=https://infraroot.at/pub/mtd/
 PKG_HASH:=8d15e8b70f036d6af1a66011f8ca0e048e9675fa7983d33bea92c24313a232d2
 PKG_CPE_ID:=cpe:/a:mtd-utils_project:mtd-utils
 
