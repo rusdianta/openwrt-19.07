@@ -49,7 +49,7 @@ define Device/3g-6200n
 	append-metadata | check-size $$$$(IMAGE_SIZE)
   DEVICE_TITLE := Edimax 3g-6200n
 endef
-TARGET_DEVICES += 3g-6200n
+# TARGET_DEVICES += 3g-6200n
 
 define Device/3g-6200nl
   DTS := 3G-6200NL
@@ -59,7 +59,7 @@ define Device/3g-6200nl
 	append-metadata | check-size $$$$(IMAGE_SIZE)
   DEVICE_TITLE := Edimax 3g-6200nl
 endef
-TARGET_DEVICES += 3g-6200nl
+# TARGET_DEVICES += 3g-6200nl
 
 define Device/a5-v11
   DTS := A5-V11
@@ -71,7 +71,7 @@ define Device/a5-v11
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2
   DEFAULT := n
 endef
-TARGET_DEVICES += a5-v11
+# TARGET_DEVICES += a5-v11
 
 define Device/air3gii
   DTS := AIR3GII
@@ -79,7 +79,7 @@ define Device/air3gii
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := AirLive Air3GII
 endef
-TARGET_DEVICES += air3gii
+# TARGET_DEVICES += air3gii
 
 define Device/all0256n-4M
   DTS := ALL0256N-4M
@@ -87,14 +87,14 @@ define Device/all0256n-4M
   DEVICE_TITLE := Allnet ALL0256N (4MB)
   DEVICE_PACKAGES := rssileds
 endef
-TARGET_DEVICES += all0256n-4M
+# TARGET_DEVICES += all0256n-4M
 
 define Device/all0256n-8M
   DTS := ALL0256N-8M
   DEVICE_TITLE := Allnet ALL0256N (8MB)
   DEVICE_PACKAGES := rssileds
 endef
-TARGET_DEVICES += all0256n-8M
+# TARGET_DEVICES += all0256n-8M
 
 define Device/all5002
   DTS := ALL5002
@@ -103,7 +103,7 @@ define Device/all5002
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport \
           kmod-i2c-core kmod-i2c-gpio kmod-hwmon-lm92 kmod-gpio-pcf857x
 endef
-TARGET_DEVICES += all5002
+# TARGET_DEVICES += all5002
 
 define Device/all5003
   DTS := ALL5003
@@ -112,7 +112,7 @@ define Device/all5003
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport \
           kmod-i2c-core kmod-i2c-gpio kmod-hwmon-lm92 kmod-gpio-pcf857x
 endef
-TARGET_DEVICES += all5003
+# TARGET_DEVICES += all5003
 
 define Device/asl26555-8M
   DTS := ASL26555-8M
@@ -121,7 +121,7 @@ define Device/asl26555-8M
   DEVICE_TITLE := Alpha ASL26555 
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += asl26555-8M
+# TARGET_DEVICES += asl26555-8M
 
 define Device/asl26555-16M
   DTS := ASL26555-16M
@@ -130,14 +130,14 @@ define Device/asl26555-16M
   DEVICE_TITLE := Alpha ASL26555 16M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += asl26555-16M
+# TARGET_DEVICES += asl26555-16M
 
 define Device/atp-52b
   DTS := ATP-52B
   IMAGE_SIZE := 7808k
   DEVICE_TITLE := Argus ATP-52B
 endef
-TARGET_DEVICES += atp-52b
+# TARGET_DEVICES += atp-52b
 
 define Device/awm002-evb-4M
   DTS := AWM002-EVB-4M
@@ -146,7 +146,7 @@ define Device/awm002-evb-4M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 \
 		kmod-i2c-core kmod-i2c-gpio
 endef
-TARGET_DEVICES += awm002-evb-4M
+# TARGET_DEVICES += awm002-evb-4M
 
 define Device/awm002-evb-8M
   DTS := AWM002-EVB-8M
@@ -154,7 +154,7 @@ define Device/awm002-evb-8M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 \
 		kmod-i2c-core kmod-i2c-gpio
 endef
-TARGET_DEVICES += awm002-evb-8M
+# TARGET_DEVICES += awm002-evb-8M
 
 define Device/awapn2403
   DTS := AWAPN2403
@@ -162,13 +162,13 @@ define Device/awapn2403
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := AsiaRF AWAPN2403
 endef
-TARGET_DEVICES += awapn2403
+# TARGET_DEVICES += awapn2403
 
 define Device/bc2
   DTS := BC2
   DEVICE_TITLE := NexAira BC2
 endef
-TARGET_DEVICES += bc2
+# TARGET_DEVICES += bc2
 
 define Device/broadway
   DTS := BROADWAY
@@ -177,14 +177,14 @@ define Device/broadway
   DEVICE_TITLE := Hauppauge Broadway
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += broadway
+# TARGET_DEVICES += broadway
 
 define Device/carambola
   DTS := CARAMBOLA
   DEVICE_TITLE := 8devices Carambola
   DEVICE_PACKAGES :=
 endef
-TARGET_DEVICES += carambola
+# TARGET_DEVICES += carambola
 
 define Device/d105
   DTS := D105
@@ -336,14 +336,14 @@ define Device/f5d8235-v2
   DEVICE_TITLE := Belkin F5D8235 v2
   DEVICE_PACKAGES := kmod-switch-rtl8366rb
 endef
-TARGET_DEVICES += f5d8235-v2
+# TARGET_DEVICES += f5d8235-v2
 
 define Device/f7c027
   DTS := F7C027
   IMAGE_SIZE := 7616k
   DEVICE_TITLE := Belkin F7C027
 endef
-TARGET_DEVICES += f7c027
+# TARGET_DEVICES += f7c027
 
 define Device/fonera20n
   DTS := FONERA20N
@@ -353,14 +353,14 @@ define Device/fonera20n
   DEVICE_TITLE := Fonera 2.0N
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += fonera20n
+# TARGET_DEVICES += fonera20n
 
 define Device/freestation5
   DTS := FREESTATION5
   DEVICE_TITLE := ARC Wireless FreeStation
   DEVICE_PACKAGES := kmod-usb-dwc2 kmod-rt2500-usb kmod-rt2800-usb kmod-rt2x00-usb
 endef
-TARGET_DEVICES += freestation5
+# TARGET_DEVICES += freestation5
 
 define Device/hg255d
   DTS := HG255D
@@ -376,27 +376,27 @@ define Device/hlk-rm04
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | hilink-header
   DEVICE_TITLE := Hi-Link HLK-RM04
 endef
-TARGET_DEVICES += hlk-rm04
+# TARGET_DEVICES += hlk-rm04
 
 define Device/ht-tm02
   DTS := HT-TM02
   DEVICE_TITLE := HooToo HT-TM02
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += ht-tm02
+# TARGET_DEVICES += ht-tm02
 
 define Device/hw550-3g
   DTS := HW550-3G
   DEVICE_TITLE := Aztech HW550-3G
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += hw550-3g
+# TARGET_DEVICES += hw550-3g
 
 define Device/ip2202
   DTS := IP2202
   DEVICE_TITLE := Poray IP2202
 endef
-TARGET_DEVICES += ip2202
+# TARGET_DEVICES += ip2202
 
 define Device/jhr-n805r
   DTS := JHR-N805R
@@ -406,7 +406,7 @@ define Device/jhr-n805r
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | jcg-header 29.24
   DEVICE_TITLE := JCG JHR-N805R
 endef
-TARGET_DEVICES += jhr-n805r
+# TARGET_DEVICES += jhr-n805r
 
 define Device/jhr-n825r
   DTS := JHR-N825R
@@ -416,7 +416,7 @@ define Device/jhr-n825r
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | jcg-header 23.24
   DEVICE_TITLE := JCG JHR-N825R
 endef
-TARGET_DEVICES += jhr-n825r
+# TARGET_DEVICES += jhr-n825r
 
 define Device/jhr-n926r
   DTS := JHR-N926R
@@ -426,7 +426,7 @@ define Device/jhr-n926r
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | jcg-header 25.24
   DEVICE_TITLE := JCG JHR-N926R
 endef
-TARGET_DEVICES += jhr-n926r
+# TARGET_DEVICES += jhr-n926r
 
 define Device/m2m
   DTS := M2M
@@ -436,7 +436,7 @@ define Device/m2m
 		kmod-usb-core kmod-usb2 kmod-usb-storage kmod-scsi-core \
 		kmod-fs-ext4 kmod-fs-vfat block-mount
 endef
-TARGET_DEVICES += m2m
+# TARGET_DEVICES += m2m
 
 define Device/m3
   DTS := M3
@@ -448,7 +448,7 @@ define Device/m3
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-ledtrig-netdev \
 	kmod-ledtrig-timer
 endef
-TARGET_DEVICES += m3
+# TARGET_DEVICES += m3
 
 define Device/m4-4M
   DTS := M4-4M
@@ -460,7 +460,7 @@ define Device/m4-4M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-ledtrig-netdev \
 	kmod-ledtrig-timer
 endef
-TARGET_DEVICES += m4-4M
+# TARGET_DEVICES += m4-4M
 
 define Device/m4-8M
   DTS := M4-8M
@@ -470,25 +470,25 @@ define Device/m4-8M
   DEVICE_TITLE := Poray M4 (8MB)
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-ledtrig-netdev kmod-ledtrig-timer
 endef
-TARGET_DEVICES += m4-8M
+# TARGET_DEVICES += m4-8M
 
 define Device/miniembplug
   DTS := MINIEMBPLUG
   DEVICE_TITLE := Omnima MiniEMBPlug
 endef
-TARGET_DEVICES += miniembplug
+# TARGET_DEVICES += miniembplug
 
 define Device/miniembwifi
   DTS := MINIEMBWIFI
   DEVICE_TITLE := Omnima MiniEMBWiFi
 endef
-TARGET_DEVICES += miniembwifi
+# TARGET_DEVICES += miniembwifi
 
 define Device/mofi3500-3gn
   DTS := MOFI3500-3GN
   DEVICE_TITLE := MoFi Network MOFI3500-3GN
 endef
-TARGET_DEVICES += mofi3500-3gn
+# TARGET_DEVICES += mofi3500-3gn
 
 define Device/mpr-a1
   DTS := MPRA1
@@ -498,7 +498,7 @@ define Device/mpr-a1
   DEVICE_TITLE := HAME MPR-A1
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-ledtrig-netdev
 endef
-TARGET_DEVICES += mpr-a1
+# TARGET_DEVICES += mpr-a1
 
 define Device/mpr-a2
   DTS := MPRA2
@@ -506,13 +506,13 @@ define Device/mpr-a2
   DEVICE_TITLE := HAME MPR-A2
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-ledtrig-netdev
 endef
-TARGET_DEVICES += mpr-a2
+# TARGET_DEVICES += mpr-a2
 
 define Device/mr-102n
   DTS := MR-102N
   DEVICE_TITLE := AXIMCom MR-102N
 endef
-TARGET_DEVICES += mr-102n
+# TARGET_DEVICES += mr-102n
 
 define Device/mzk-dp150n
   DTS := MZK-DP150N
@@ -521,7 +521,7 @@ define Device/mzk-dp150n
   DEVICE_TITLE := Planex MZK-DP150N
   DEVICE_PACKAGES := kmod-spi-dev
 endef
-TARGET_DEVICES += mzk-dp150n
+# TARGET_DEVICES += mzk-dp150n
 
 define Device/mzk-w300nh2
   DTS := MZK-W300NH2
@@ -531,13 +531,13 @@ define Device/mzk-w300nh2
 	edimax-header -s CSYS -m RN52 -f 0x50000 -S 0xc0000
   DEVICE_TITLE := Planex MZK-W300NH2
 endef
-TARGET_DEVICES += mzk-w300nh2
+# TARGET_DEVICES += mzk-w300nh2
 
 define Device/mzk-wdpr
   DTS := MZK-WDPR
   DEVICE_TITLE := Planex MZK-WDPR
 endef
-TARGET_DEVICES += mzk-wdpr
+# TARGET_DEVICES += mzk-wdpr
 
 define Device/nbg-419n
   DTS := NBG-419N
@@ -545,14 +545,14 @@ define Device/nbg-419n
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := ZyXEL NBG-419N
 endef
-TARGET_DEVICES += nbg-419n
+# TARGET_DEVICES += nbg-419n
 
 define Device/nbg-419n2
   DTS := NBG-419N2
   IMAGE_SIZE := $(ralink_default_fw_size_8M)
   DEVICE_TITLE := ZyXEL NBG-419N2
 endef
-TARGET_DEVICES += nbg-419n2
+# TARGET_DEVICES += nbg-419n2
 
 define Device/ncs601w
   DTS := NCS601W
@@ -560,7 +560,7 @@ define Device/ncs601w
   DEVICE_PACKAGES := kmod-video-core kmod-video-uvc \
 		kmod-usb-core kmod-usb-ohci
 endef
-TARGET_DEVICES += ncs601w
+# TARGET_DEVICES += ncs601w
 
 define Device/nixcore-x1-8M
   DTS := NIXCORE-8M
@@ -569,7 +569,7 @@ define Device/nixcore-x1-8M
   DEVICE_TITLE := NixcoreX1 (8M)
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-i2c-core kmod-i2c-ralink kmod-spi-dev
 endef
-TARGET_DEVICES += nixcore-x1-8M
+# TARGET_DEVICES += nixcore-x1-8M
 
 define Device/nixcore-x1-16M
   DTS := NIXCORE-16M
@@ -578,7 +578,7 @@ define Device/nixcore-x1-16M
   DEVICE_TITLE := NixcoreX1 (16M)
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-i2c-core kmod-i2c-ralink kmod-spi-dev
 endef
-TARGET_DEVICES += nixcore-x1-16M
+# TARGET_DEVICES += nixcore-x1-16M
 
 define Device/nw718
   DTS := NW718
@@ -586,7 +586,7 @@ define Device/nw718
   UIMAGE_NAME:= ARA1B4NCRNW718;1
   DEVICE_TITLE := Netcore NW718
 endef
-TARGET_DEVICES += nw718
+# TARGET_DEVICES += nw718
 
 define Device/psr-680w
   DTS := PSR-680W
@@ -594,14 +594,14 @@ define Device/psr-680w
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Petatel PSR-680W Wireless 3G Router
 endef
-TARGET_DEVICES += psr-680w
+# TARGET_DEVICES += psr-680w
 
 define Device/pwh2004
   DTS := PWH2004
   DEVICE_TITLE := Prolink PWH2004
   DEVICE_PACKAGES :=
 endef
-TARGET_DEVICES += pwh2004
+# TARGET_DEVICES += pwh2004
 
 define Device/px-4885-4M
   DTS := PX-4885-4M
@@ -610,7 +610,7 @@ define Device/px-4885-4M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb2 kmod-usb-ohci \
 	kmod-usb-ledtrig-usbport kmod-leds-gpio
 endef
-TARGET_DEVICES += px-4885-4M
+# TARGET_DEVICES += px-4885-4M
 
 define Device/px-4885-8M
   DTS := PX-4885-8M
@@ -618,7 +618,7 @@ define Device/px-4885-8M
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb2 kmod-usb-ohci \
 	kmod-usb-ledtrig-usbport kmod-leds-gpio
 endef
-TARGET_DEVICES += px-4885-8M
+# TARGET_DEVICES += px-4885-8M
 
 define Device/rt5350f-olinuxino
   DTS := RT5350F-OLINUXINO
@@ -627,7 +627,7 @@ define Device/rt5350f-olinuxino
 		kmod-i2c-core kmod-i2c-ralink \
 		kmod-spi-dev
 endef
-TARGET_DEVICES += rt5350f-olinuxino
+# TARGET_DEVICES += rt5350f-olinuxino
 
 define Device/rt5350f-olinuxino-evb
   DTS := RT5350F-OLINUXINO-EVB
@@ -636,7 +636,7 @@ define Device/rt5350f-olinuxino-evb
 		kmod-i2c-core kmod-i2c-ralink \
 		kmod-spi-dev
 endef
-TARGET_DEVICES += rt5350f-olinuxino-evb
+# TARGET_DEVICES += rt5350f-olinuxino-evb
 
 define Device/rt-g32-b1
   DTS := RT-G32-B1
@@ -644,7 +644,7 @@ define Device/rt-g32-b1
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Asus RT-G32 B1
 endef
-TARGET_DEVICES += rt-g32-b1
+# TARGET_DEVICES += rt-g32-b1
 
 define Device/rt-n10-plus
   DTS := RT-N10-PLUS
@@ -653,21 +653,21 @@ define Device/rt-n10-plus
   DEVICE_TITLE := Asus RT-N10+
   DEFAULT := n
 endef
-TARGET_DEVICES += rt-n10-plus
+# TARGET_DEVICES += rt-n10-plus
 
 define Device/rt-n13u
   DTS := RT-N13U
   DEVICE_TITLE := Asus RT-N13U
   DEVICE_PACKAGES := kmod-leds-gpio kmod-rt2800-pci kmod-usb-dwc2
 endef
-TARGET_DEVICES += rt-n13u
+# TARGET_DEVICES += rt-n13u
 
 define Device/rut5xx
   DTS := RUT5XX
   DEVICE_TITLE := Teltonika RUT5XX
   DEVICE_PACKAGES := om-watchdog
 endef
-TARGET_DEVICES += rut5xx
+# TARGET_DEVICES += rut5xx
 
 define Device/sl-r7205
   DTS := SL-R7205
@@ -675,7 +675,7 @@ define Device/sl-r7205
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Skyline SL-R7205 Wireless 3G Router
 endef
-TARGET_DEVICES += sl-r7205
+# TARGET_DEVICES += sl-r7205
 
 define Device/tew-638apb-v2
   DTS := TEW-638APB-V2
@@ -685,13 +685,13 @@ define Device/tew-638apb-v2
         append-metadata | check-size $$$$(IMAGE_SIZE)
   DEVICE_TITLE := TRENDnet TEW-638APB v2
 endef
-TARGET_DEVICES += tew-638apb-v2
+# TARGET_DEVICES += tew-638apb-v2
 
 define Device/tew-714tru
   DTS := TEW-714TRU
   DEVICE_TITLE := TRENDnet TEW-714TRU
 endef
-TARGET_DEVICES += tew-714tru
+# TARGET_DEVICES += tew-714tru
 
 define Device/ur-326n4g
   DTS := UR-326N4G
@@ -700,14 +700,14 @@ define Device/ur-326n4g
   DEVICE_TITLE := UPVEL UR-326N4G
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += ur-326n4g
+# TARGET_DEVICES += ur-326n4g
 
 define Device/ur-336un
   DTS := UR-336UN
   DEVICE_TITLE := UPVEL UR-336UN
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-dwc2 kmod-usb-ledtrig-usbport
 endef
-TARGET_DEVICES += ur-336un
+# TARGET_DEVICES += ur-336un
 
 define Device/v22rw-2x2
   DTS := V22RW-2X2
@@ -715,7 +715,7 @@ define Device/v22rw-2x2
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Ralink AP-RT3052-V22RW-2X2
 endef
-TARGET_DEVICES += v22rw-2x2
+# TARGET_DEVICES += v22rw-2x2
 
 define Device/vocore-8M
   DTS := VOCORE-8M
@@ -726,7 +726,7 @@ define Device/vocore-8M
 		kmod-i2c-core kmod-i2c-ralink \
 		kmod-spi-dev
 endef
-TARGET_DEVICES += vocore-8M
+# TARGET_DEVICES += vocore-8M
 
 define Device/vocore-16M
   DTS := VOCORE-16M
@@ -737,7 +737,7 @@ define Device/vocore-16M
 		kmod-i2c-core kmod-i2c-ralink \
 		kmod-spi-dev
 endef
-TARGET_DEVICES += vocore-16M
+# TARGET_DEVICES += vocore-16M
 
 define Device/w150m
   DTS := W150M
@@ -767,7 +767,7 @@ define Device/wcr-150gn
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Sparklan WCR-150GN
 endef
-TARGET_DEVICES += wcr-150gn
+# TARGET_DEVICES += wcr-150gn
 
 define Device/whr-g300n
   DTS := WHR-G300N
@@ -778,21 +778,21 @@ define Device/whr-g300n
   IMAGE/tftp.bin := $$(sysupgrade_bin) | \
     check-size $$$$(IMAGE_SIZE) | buffalo-tftp-header
 endef
-TARGET_DEVICES += whr-g300n
+# TARGET_DEVICES += whr-g300n
 
 define Device/wizard8800
   DTS := WIZARD8800
   UIMAGE_NAME:= Linux Kernel Image
   DEVICE_TITLE := EasyAcc WIZARD 8800
 endef
-TARGET_DEVICES += wizard8800
+# TARGET_DEVICES += wizard8800
 
 define Device/wizfi630a
   DTS := WIZFI630A
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := WIZnet WizFi630A
 endef
-TARGET_DEVICES += wizfi630a
+# TARGET_DEVICES += wizfi630a
 
 define Device/wl-330n
   DTS := WL-330N
@@ -800,7 +800,7 @@ define Device/wl-330n
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := Asus WL-330N
 endef
-TARGET_DEVICES += wl-330n
+# TARGET_DEVICES += wl-330n
 
 define Device/wl-330n3g
   DTS := WL-330N3G
@@ -809,7 +809,7 @@ define Device/wl-330n3g
   DEVICE_TITLE := Asus WL-330N3G
   DEVICE_PACKAGES :=
 endef
-TARGET_DEVICES += wl-330n3g
+# TARGET_DEVICES += wl-330n3g
 
 define Device/wl-351
   DTS := WL-351
@@ -819,7 +819,7 @@ define Device/wl-351
   DEVICE_PACKAGES := kmod-switch-rtl8366rb kmod-swconfig swconfig
   DEFAULT := n
 endef
-TARGET_DEVICES += wl-351
+# TARGET_DEVICES += wl-351
 
 define Device/wnce2001
   DTS := WNCE2001
@@ -831,7 +831,7 @@ define Device/wnce2001
 	dap-header -s RT3052-AP-WNCE2001-3 -r NA -v 1.0.0.99
   DEVICE_TITLE := Netgear WNCE2001
 endef
-TARGET_DEVICES += wnce2001
+# TARGET_DEVICES += wnce2001
 
 define Device/wr512-3gn-4M
   DTS := WR512-3GN-4M
@@ -839,19 +839,19 @@ define Device/wr512-3gn-4M
   DEVICE_TITLE := WR512-3GN (4M)
   DEFAULT := n
 endef
-TARGET_DEVICES += wr512-3gn-4M
+# TARGET_DEVICES += wr512-3gn-4M
 
 define Device/wr512-3gn-8M
   DTS := WR512-3GN-8M
   DEVICE_TITLE := WR512-3GN (8M)
 endef
-TARGET_DEVICES += wr512-3gn-8M
+# TARGET_DEVICES += wr512-3gn-8M
 
 define Device/wr6202
   DTS := WR6202
   DEVICE_TITLE := AWB WR6202
 endef
-TARGET_DEVICES += wr6202
+# TARGET_DEVICES += wr6202
 
 define Device/wt1520-4M
   DTS := WT1520-4M
@@ -861,7 +861,7 @@ define Device/wt1520-4M
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | poray-header -B WT1520 -F 4M
   DEVICE_TITLE := Nexx WT1520 (4MB)
 endef
-TARGET_DEVICES += wt1520-4M
+# TARGET_DEVICES += wt1520-4M
 
 define Device/wt1520-8M
   DTS := WT1520-8M
@@ -870,7 +870,7 @@ define Device/wt1520-8M
 	$$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | poray-header -B WT1520 -F 8M
   DEVICE_TITLE := Nexx WT1520 (8MB)
 endef
-TARGET_DEVICES += wt1520-8M
+# TARGET_DEVICES += wt1520-8M
 
 define Device/x5
   DTS := X5
@@ -880,7 +880,7 @@ define Device/x5
   DEVICE_TITLE := Poray X5/X6
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-ledtrig-netdev kmod-ledtrig-timer
 endef
-TARGET_DEVICES += x5
+# TARGET_DEVICES += x5
 
 
 define Device/x8
@@ -891,7 +891,7 @@ define Device/x8
   DEVICE_TITLE := Poray X8
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-ledtrig-netdev kmod-ledtrig-timer
 endef
-TARGET_DEVICES += x8
+# TARGET_DEVICES += x8
 
 define Device/xdxrn502j
   DTS := XDXRN502J
@@ -899,7 +899,7 @@ define Device/xdxrn502j
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := XDX RN502J
 endef
-TARGET_DEVICES += xdxrn502j
+# TARGET_DEVICES += xdxrn502j
 
 define Device/kn
   DTS := kn
@@ -909,18 +909,18 @@ define Device/kn
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ehci \
 	kmod-usb-ledtrig-usbport kmod-usb-dwc2
 endef
-TARGET_DEVICES += kn
+# TARGET_DEVICES += kn
 
 define Device/zyxel_keenetic-start
   DTS := kn_st
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := ZyXEL Keenetic Start
 endef
-TARGET_DEVICES += zyxel_keenetic-start
+# TARGET_DEVICES += zyxel_keenetic-start
 
 define Device/zorlik_zl5900v2
   DTS := ZL5900V2
   DEVICE_TITLE := Zorlik ZL5900V2
   DEVICE_PACKAGES := kmod-usb-core kmod-usb-ohci kmod-usb2 kmod-ledtrig-netdev
 endef
-TARGET_DEVICES += zorlik_zl5900v2
+# TARGET_DEVICES += zorlik_zl5900v2

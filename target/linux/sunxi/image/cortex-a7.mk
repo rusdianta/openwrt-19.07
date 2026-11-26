@@ -15,7 +15,7 @@ define Device/sun7i-a20-olinuxino-lime
   SUNXI_DTS:=sun7i-a20-olinuxino-lime
 endef
 
-TARGET_DEVICES += sun7i-a20-olinuxino-lime
+# TARGET_DEVICES += sun7i-a20-olinuxino-lime
 
 
 define Device/sun7i-a20-olinuxino-lime2
@@ -25,7 +25,7 @@ define Device/sun7i-a20-olinuxino-lime2
   SUNXI_DTS:=sun7i-a20-olinuxino-lime2
 endef
 
-TARGET_DEVICES += sun7i-a20-olinuxino-lime2
+# TARGET_DEVICES += sun7i-a20-olinuxino-lime2
 
 
 define Device/sun7i-a20-olinuxino-lime2-emmc
@@ -35,7 +35,7 @@ define Device/sun7i-a20-olinuxino-lime2-emmc
   SUNXI_DTS:=sun7i-a20-olinuxino-lime2-emmc
 endef
 
-TARGET_DEVICES += sun7i-a20-olinuxino-lime2-emmc
+# TARGET_DEVICES += sun7i-a20-olinuxino-lime2-emmc
 
 
 define Device/sun7i-a20-olinuxino-micro
@@ -45,7 +45,7 @@ define Device/sun7i-a20-olinuxino-micro
   SUNXI_DTS:=sun7i-a20-olinuxino-micro
 endef
 
-TARGET_DEVICES += sun7i-a20-olinuxino-micro
+# TARGET_DEVICES += sun7i-a20-olinuxino-micro
 
 
 define Device/sun7i-a20-bananapi
@@ -55,7 +55,7 @@ define Device/sun7i-a20-bananapi
   SUNXI_DTS:=sun7i-a20-bananapi
 endef
 
-TARGET_DEVICES += sun7i-a20-bananapi
+# TARGET_DEVICES += sun7i-a20-bananapi
 
 
 define Device/sun7i-a20-bananapro
@@ -65,7 +65,7 @@ define Device/sun7i-a20-bananapro
   SUNXI_DTS:=sun7i-a20-bananapro
 endef
 
-TARGET_DEVICES += sun7i-a20-bananapro
+# TARGET_DEVICES += sun7i-a20-bananapro
 
 
 define Device/sun7i-a20-cubieboard2
@@ -75,7 +75,7 @@ define Device/sun7i-a20-cubieboard2
   SUNXI_DTS:=sun7i-a20-cubieboard2
 endef
 
-TARGET_DEVICES += sun7i-a20-cubieboard2
+# TARGET_DEVICES += sun7i-a20-cubieboard2
 
 
 define Device/sun7i-a20-cubietruck
@@ -85,7 +85,7 @@ define Device/sun7i-a20-cubietruck
   SUNXI_DTS:=sun7i-a20-cubietruck
 endef
 
-TARGET_DEVICES += sun7i-a20-cubietruck
+# TARGET_DEVICES += sun7i-a20-cubietruck
 
 
 define Device/sun7i-a20-lamobo-r1
@@ -95,7 +95,7 @@ define Device/sun7i-a20-lamobo-r1
   SUNXI_DTS:=sun7i-a20-lamobo-r1
 endef
 
-TARGET_DEVICES += sun7i-a20-lamobo-r1
+# TARGET_DEVICES += sun7i-a20-lamobo-r1
 
 
 define Device/sun6i-a31-m9
@@ -105,7 +105,7 @@ define Device/sun6i-a31-m9
   SUNXI_DTS:=sun6i-a31-m9
 endef
 
-TARGET_DEVICES += sun6i-a31-m9
+# TARGET_DEVICES += sun6i-a31-m9
 
 
 define Device/sun8i-h2-plus-orangepi-zero
@@ -115,7 +115,7 @@ define Device/sun8i-h2-plus-orangepi-zero
   SUNXI_DTS:=sun8i-h2-plus-orangepi-zero
 endef
 
-TARGET_DEVICES += sun8i-h2-plus-orangepi-zero
+# TARGET_DEVICES += sun8i-h2-plus-orangepi-zero
 
 
 define Device/sun8i-h2-plus-orangepi-r1
@@ -125,7 +125,7 @@ define Device/sun8i-h2-plus-orangepi-r1
   SUNXI_DTS:=sun8i-h2-plus-orangepi-r1
 endef
 
-TARGET_DEVICES += sun8i-h2-plus-orangepi-r1
+# TARGET_DEVICES += sun8i-h2-plus-orangepi-r1
 
 define Device/sun8i-h3-bananapi-m2-plus
   DEVICE_TITLE:=Sinovoip Banana Pi M2 Plus
@@ -136,7 +136,7 @@ define Device/sun8i-h3-bananapi-m2-plus
   SUNXI_DTS:=sun8i-h3-bananapi-m2-plus
 endef
 
-TARGET_DEVICES += sun8i-h3-bananapi-m2-plus
+# TARGET_DEVICES += sun8i-h3-bananapi-m2-plus
 
 define Device/sun8i-h3-nanopi-m1-plus
   DEVICE_TITLE:=FriendlyArm NanoPi M1 Plus
@@ -147,7 +147,7 @@ define Device/sun8i-h3-nanopi-m1-plus
   SUNXI_DTS:=sun8i-h3-nanopi-m1-plus
 endef
 
-TARGET_DEVICES += sun8i-h3-nanopi-m1-plus
+# TARGET_DEVICES += sun8i-h3-nanopi-m1-plus
 
 
 define Device/sun8i-h3-nanopi-neo
@@ -156,7 +156,7 @@ define Device/sun8i-h3-nanopi-neo
   SUNXI_DTS:=sun8i-h3-nanopi-neo
 endef
 
-TARGET_DEVICES += sun8i-h3-nanopi-neo
+# TARGET_DEVICES += sun8i-h3-nanopi-neo
 
 
 define Device/sun8i-h3-orangepi-one
@@ -166,7 +166,7 @@ define Device/sun8i-h3-orangepi-one
   SUNXI_DTS:=sun8i-h3-orangepi-one
 endef
 
-TARGET_DEVICES += sun8i-h3-orangepi-one
+# TARGET_DEVICES += sun8i-h3-orangepi-one
 
 
 define Device/sun8i-h3-orangepi-pc
@@ -176,7 +176,7 @@ define Device/sun8i-h3-orangepi-pc
   SUNXI_DTS:=sun8i-h3-orangepi-pc
 endef
 
-TARGET_DEVICES += sun8i-h3-orangepi-pc
+# TARGET_DEVICES += sun8i-h3-orangepi-pc
 
 
 define Device/sun8i-h3-orangepi-pc-plus
@@ -186,7 +186,7 @@ define Device/sun8i-h3-orangepi-pc-plus
   SUNXI_DTS:=sun8i-h3-orangepi-pc-plus
 endef
 
-TARGET_DEVICES += sun8i-h3-orangepi-pc-plus
+# TARGET_DEVICES += sun8i-h3-orangepi-pc-plus
 
 
 define Device/sun8i-h3-orangepi-plus
@@ -196,7 +196,7 @@ define Device/sun8i-h3-orangepi-plus
   SUNXI_DTS:=sun8i-h3-orangepi-plus
 endef
 
-TARGET_DEVICES += sun8i-h3-orangepi-plus
+# TARGET_DEVICES += sun8i-h3-orangepi-plus
 
 define Device/sun8i-h3-orangepi-2
   DEVICE_TITLE:=Xunlong Orange Pi 2
@@ -205,7 +205,7 @@ define Device/sun8i-h3-orangepi-2
   SUNXI_DTS:=sun8i-h3-orangepi-2
 endef
 
-TARGET_DEVICES += sun8i-h3-orangepi-2
+# TARGET_DEVICES += sun8i-h3-orangepi-2
 
 
 define Device/sun7i-a20-pcduino3
@@ -215,6 +215,6 @@ define Device/sun7i-a20-pcduino3
   SUNXI_DTS:=sun7i-a20-pcduino3
 endef
 
-TARGET_DEVICES += sun7i-a20-pcduino3
+# TARGET_DEVICES += sun7i-a20-pcduino3
 
 endif

@@ -365,7 +365,7 @@ define Device/mw4530r-v1
   DEVICE_TITLE := Mercury MW4530R v1
   TPLINK_HWID := 0x45300001
 endef
-TARGET_DEVICES += mw4530r-v1
+# TARGET_DEVICES += mw4530r-v1
 
 define Device/tl-wpa8630-v1
   $(Device/tplink-8mlzma)

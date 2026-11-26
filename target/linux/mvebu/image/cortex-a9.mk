@@ -76,7 +76,7 @@ define Device/plathome_openblocks-ax3-4
   IMAGE/factory.img := append-kernel | pad-to $$(BLOCKSIZE) | append-ubi
   DEVICE_TITLE := Plat'Home OpenBlocks AX3
 endef
-TARGET_DEVICES += plathome_openblocks-ax3-4
+# TARGET_DEVICES += plathome_openblocks-ax3-4
 
 define Device/marvell_a385-db-ap
   $(Device/NAND-256K)
@@ -86,7 +86,7 @@ define Device/marvell_a385-db-ap
   DEVICE_TITLE := Marvell Armada 385 DB AP (DB-88F6820-AP)
   SUPPORTED_DEVICES += armada-385-db-ap
 endef
-TARGET_DEVICES += marvell_a385-db-ap
+# TARGET_DEVICES += marvell_a385-db-ap
 
 define Device/marvell_a370-db
   $(Device/NAND-512K)
@@ -94,7 +94,7 @@ define Device/marvell_a370-db
   DEVICE_DTS := armada-370-db
   SUPPORTED_DEVICES += armada-370-db
 endef
-TARGET_DEVICES += marvell_a370-db
+# TARGET_DEVICES += marvell_a370-db
 
 define Device/marvell_a370-rd
   $(Device/NAND-512K)
@@ -102,7 +102,7 @@ define Device/marvell_a370-rd
   DEVICE_DTS := armada-370-rd
   SUPPORTED_DEVICES += armada-370-rd
 endef
-TARGET_DEVICES += marvell_a370-rd
+# TARGET_DEVICES += marvell_a370-rd
 
 define Device/marvell_axp-db
   $(Device/NAND-512K)
@@ -110,7 +110,7 @@ define Device/marvell_axp-db
   DEVICE_DTS := armada-xp-db
   SUPPORTED_DEVICES += armada-xp-db
 endef
-TARGET_DEVICES += marvell_axp-db
+# TARGET_DEVICES += marvell_axp-db
 
 define Device/marvell_axp-gp
   $(Device/NAND-512K)
@@ -118,7 +118,7 @@ define Device/marvell_axp-gp
   DEVICE_DTS := armada-xp-gp
   SUPPORTED_DEVICES += armada-xp-gp
 endef
-TARGET_DEVICES += marvell_axp-gp
+# TARGET_DEVICES += marvell_axp-gp
 
 define Device/marvell_a388-rd
   DEVICE_TITLE := Marvell Armada 388 RD (RD-88F6820-AP)
@@ -127,7 +127,7 @@ define Device/marvell_a388-rd
   IMAGE/firmware.bin := append-kernel | pad-to 256k | append-rootfs | pad-rootfs
   SUPPORTED_DEVICES := armada-388-rd marvell,a385-rd
 endef
-TARGET_DEVICES += marvell_a388-rd
+# TARGET_DEVICES += marvell_a388-rd
 
 define Device/solidrun_clearfog-pro-a1
   KERNEL_INSTALL := 1
@@ -141,7 +141,7 @@ define Device/solidrun_clearfog-pro-a1
   UBOOT := clearfog-u-boot-spl.kwb
   BOOT_SCRIPT := clearfog
 endef
-TARGET_DEVICES += solidrun_clearfog-pro-a1
+# TARGET_DEVICES += solidrun_clearfog-pro-a1
 
 define Device/solidrun_clearfog-base-a1
   KERNEL_INSTALL := 1
@@ -155,7 +155,7 @@ define Device/solidrun_clearfog-base-a1
   UBOOT := clearfog-u-boot-spl.kwb
   BOOT_SCRIPT := clearfog
 endef
-TARGET_DEVICES += solidrun_clearfog-base-a1
+# TARGET_DEVICES += solidrun_clearfog-base-a1
 
 define Device/globalscale_mirabox
   $(Device/NAND-512K)
@@ -163,7 +163,7 @@ define Device/globalscale_mirabox
   SUPPORTED_DEVICES += mirabox
   DEVICE_TITLE := Globalscale Mirabox
 endef
-TARGET_DEVICES += globalscale_mirabox
+# TARGET_DEVICES += globalscale_mirabox
 
 define Device/cznic_turris-omnia
   KERNEL_INSTALL := 1
@@ -182,6 +182,6 @@ define Device/cznic_turris-omnia
   SUPPORTED_DEVICES += armada-385-turris-omnia
   BOOT_SCRIPT := turris-omnia
 endef
-TARGET_DEVICES += cznic_turris-omnia
+# TARGET_DEVICES += cznic_turris-omnia
 
 endif

@@ -22,14 +22,14 @@ define Device/nand-64m
   MIKROTIK_CHUNKSIZE := 512
   DEVICE_TITLE := MikroTik RouterBoard (64 MB NAND)
 endef
-TARGET_DEVICES += nand-64m
+# TARGET_DEVICES += nand-64m
 
 define Device/nand-large
   $(Device/mikrotik-nand)
   MIKROTIK_CHUNKSIZE := 2048
   DEVICE_TITLE := MikroTik RouterBoard (>= 128 MB NAND)
 endef
-TARGET_DEVICES += nand-large
+# TARGET_DEVICES += nand-large
 
 define Device/nand-large-ac
   $(Device/mikrotik-nand)
@@ -38,7 +38,7 @@ define Device/nand-large-ac
   DEVICE_PACKAGES += kmod-ath10k-ct ath10k-firmware-qca988x-ct
   SUPPORTED_DEVICES := rb-921gs-5hpacd-r2 rb-922uags-5hpacd
 endef
-TARGET_DEVICES += nand-large-ac
+# TARGET_DEVICES += nand-large-ac
 
 define Device/rb-nor-flash-16M
   $(Device/mikrotik)
@@ -50,7 +50,7 @@ define Device/rb-nor-flash-16M
   IMAGE/sysupgrade.bin := append-kernel | kernel2minor -s 1024 -e | pad-to $$$$(BLOCKSIZE) | \
 	append-rootfs | pad-rootfs | append-metadata | check-size $$$$(IMAGE_SIZE)
 endef
-TARGET_DEVICES += rb-nor-flash-16M
+# TARGET_DEVICES += rb-nor-flash-16M
 
 define Device/rb-nor-flash-16M-ac
   $(Device/rb-nor-flash-16M)
@@ -58,4 +58,4 @@ define Device/rb-nor-flash-16M-ac
   DEVICE_PACKAGES += kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct ath10k-firmware-qca9887-ct kmod-usb-ehci
   SUPPORTED_DEVICES += rb-wapg-5hact2hnd
 endef
-TARGET_DEVICES += rb-nor-flash-16M-ac
+# TARGET_DEVICES += rb-nor-flash-16M-ac

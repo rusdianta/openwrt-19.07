@@ -35,7 +35,7 @@ define Device/ls1012ardb
     append-kernel | pad-to 32M | \
     append-ubi | check-size 67108865
 endef
-TARGET_DEVICES += ls1012ardb
+# TARGET_DEVICES += ls1012ardb
 
 define Device/ls1012afrwy
   DEVICE_TITLE := LS1012AFRWY
@@ -60,7 +60,7 @@ define Device/ls1012afrwy
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1012afrwy
+# TARGET_DEVICES += ls1012afrwy
 
 define Device/ls1043ardb
   DEVICE_TITLE := LS1043ARDB
@@ -80,7 +80,7 @@ define Device/ls1043ardb
     append-kernel | pad-to 32M | \
     append-rootfs | pad-rootfs | check-size 67108865
 endef
-TARGET_DEVICES += ls1043ardb
+# TARGET_DEVICES += ls1043ardb
 
 define Device/ls1043ardb-sdboot
   DEVICE_TITLE := LS1043ARDB (SD Card Boot)
@@ -102,7 +102,7 @@ define Device/ls1043ardb-sdboot
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1043ardb-sdboot
+# TARGET_DEVICES += ls1043ardb-sdboot
 
 define Device/ls1046ardb
   DEVICE_TITLE := LS1046ARDB
@@ -124,7 +124,7 @@ define Device/ls1046ardb
     append-kernel | pad-to 32M | \
     append-ubi | check-size 67108865
 endef
-TARGET_DEVICES += ls1046ardb
+# TARGET_DEVICES += ls1046ardb
 
 define Device/ls1046ardb-sdboot
   DEVICE_TITLE := LS1046ARDB (SD Card Boot)
@@ -146,7 +146,7 @@ define Device/ls1046ardb-sdboot
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1046ardb-sdboot
+# TARGET_DEVICES += ls1046ardb-sdboot
 
 define Device/ls1088ardb
   DEVICE_TITLE := LS1088ARDB
@@ -171,7 +171,7 @@ define Device/ls1088ardb
     append-kernel | pad-to 32M | \
     append-ubi | check-size 67108865
 endef
-TARGET_DEVICES += ls1088ardb
+# TARGET_DEVICES += ls1088ardb
 
 define Device/ls1088ardb-sdboot
   DEVICE_TITLE := LS1088ARDB (SD Card Boot)
@@ -196,7 +196,7 @@ define Device/ls1088ardb-sdboot
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1088ardb-sdboot
+# TARGET_DEVICES += ls1088ardb-sdboot
 
 define Device/ls2088ardb
   DEVICE_TITLE := LS2088ARDB
@@ -219,7 +219,7 @@ define Device/ls2088ardb
     append-kernel | pad-to 32M | \
     append-rootfs | pad-rootfs | check-size 67108865
 endef
-TARGET_DEVICES += ls2088ardb
+# TARGET_DEVICES += ls2088ardb
 
 define Device/traverse-ls1043
   KERNEL_NAME := Image
@@ -248,4 +248,4 @@ define Device/traverse-ls1043
   IMAGE/sysupgrade.bin = sysupgrade-tar | append-metadata
   MKUBIFS_OPTS := -m 2048 -e 124KiB -c 4096
 endef
-TARGET_DEVICES += traverse-ls1043
+# TARGET_DEVICES += traverse-ls1043

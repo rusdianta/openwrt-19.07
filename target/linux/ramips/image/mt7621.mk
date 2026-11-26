@@ -97,7 +97,7 @@ define Device/11acnas
   DEVICE_TITLE := WeVO 11AC NAS Router
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += 11acnas
+# TARGET_DEVICES += 11acnas
 
 define Device/alfa-network_quad-e4g
   DTS := QUAD-E4G
@@ -114,7 +114,7 @@ define Device/asus_rt-ac57u
   IMAGE_SIZE := 16064k
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += asus_rt-ac57u
+# TARGET_DEVICES += asus_rt-ac57u
 
 define Device/dir-860l-b1
   $(Device/seama)
@@ -134,7 +134,7 @@ define Device/mediatek_ap-mt7621a-v60
   DEVICE_TITLE := Mediatek AP-MT7621A-V60 EVB
   DEVICE_PACKAGES := kmod-usb3 kmod-sdhci-mt7620 kmod-sound-mt7620
 endef
-TARGET_DEVICES += mediatek_ap-mt7621a-v60
+# TARGET_DEVICES += mediatek_ap-mt7621a-v60
 
 define Device/xzwifi_creativebox-v1
   DTS := CreativeBox-v1
@@ -144,7 +144,7 @@ define Device/xzwifi_creativebox-v1
 	kmod-ata-core kmod-ata-ahci kmod-mt7603 kmod-mt76x2 kmod-sdhci-mt7620 \
 	kmod-usb3
 endef
-TARGET_DEVICES += xzwifi_creativebox-v1
+# TARGET_DEVICES += xzwifi_creativebox-v1
 
 define Device/elecom_wrc-1167ghbk2-s
   DTS := WRC-1167GHBK2-S
@@ -154,7 +154,7 @@ define Device/elecom_wrc-1167ghbk2-s
   IMAGE/factory.bin := $$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) |\
     elecom-wrc-factory WRC-1167GHBK2-S 0.00
 endef
-TARGET_DEVICES += elecom_wrc-1167ghbk2-s
+# TARGET_DEVICES += elecom_wrc-1167ghbk2-s
 
 define Device/elecom_wrc-2533gst
   DTS := WRC-2533GST
@@ -164,7 +164,7 @@ define Device/elecom_wrc-2533gst
   IMAGE/factory.bin := $$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) |\
     elecom-gst-factory WRC-2533GST 0.00
 endef
-TARGET_DEVICES += elecom_wrc-2533gst
+# TARGET_DEVICES += elecom_wrc-2533gst
 
 define Device/elecom_wrc-1900gst
   DTS := WRC-1900GST
@@ -174,7 +174,7 @@ define Device/elecom_wrc-1900gst
   IMAGE/factory.bin := $$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) |\
     elecom-gst-factory WRC-1900GST 0.00
 endef
-TARGET_DEVICES += elecom_wrc-1900gst
+# TARGET_DEVICES += elecom_wrc-1900gst
 
 define Device/ew1200
   DTS := EW1200
@@ -184,7 +184,7 @@ define Device/ew1200
 	kmod-ata-core kmod-ata-ahci kmod-mt76x2 kmod-mt7603 kmod-usb3 \
 	kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += ew1200
+# TARGET_DEVICES += ew1200
 
 define Device/firewrt
   DTS := FIREWRT
@@ -202,7 +202,7 @@ define Device/gehua_ghl-r-001
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
   DEFAULT := n
 endef
-TARGET_DEVICES += gehua_ghl-r-001
+# TARGET_DEVICES += gehua_ghl-r-001
 
 define Device/gnubee_gb-pc1
   DTS := GB-PC1
@@ -210,7 +210,7 @@ define Device/gnubee_gb-pc1
   DEVICE_PACKAGES := kmod-ata-core kmod-ata-ahci kmod-usb3 kmod-sdhci-mt7620
   IMAGE_SIZE := $(ralink_default_fw_size_32M)
 endef
-TARGET_DEVICES += gnubee_gb-pc1
+# TARGET_DEVICES += gnubee_gb-pc1
 
 define Device/gnubee_gb-pc2
   DTS := GB-PC2
@@ -218,7 +218,7 @@ define Device/gnubee_gb-pc2
   DEVICE_PACKAGES := kmod-ata-core kmod-ata-ahci kmod-usb3 kmod-sdhci-mt7620
   IMAGE_SIZE := $(ralink_default_fw_size_32M)
 endef
-TARGET_DEVICES += gnubee_gb-pc2
+# TARGET_DEVICES += gnubee_gb-pc2
 
 define Device/hc5962
   DTS := HC5962
@@ -233,7 +233,7 @@ define Device/hc5962
   DEVICE_TITLE := HiWiFi HC5962
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 kmod-usb3 wpad-basic
 endef
-TARGET_DEVICES += hc5962
+# TARGET_DEVICES += hc5962
 
 define Device/iodata_wn-ax1167gr
   DTS := WN-AX1167GR
@@ -243,7 +243,7 @@ define Device/iodata_wn-ax1167gr
   DEVICE_TITLE := I-O DATA WN-AX1167GR
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 wpad-basic
 endef
-TARGET_DEVICES += iodata_wn-ax1167gr
+# TARGET_DEVICES += iodata_wn-ax1167gr
 
 define Device/iodata_wn-gx300gr
   DTS := WN-GX300GR
@@ -251,14 +251,14 @@ define Device/iodata_wn-gx300gr
   DEVICE_TITLE := I-O DATA WN-GX300GR
   DEVICE_PACKAGES := kmod-mt7603 wpad-basic
 endef
-TARGET_DEVICES += iodata_wn-gx300gr
+# TARGET_DEVICES += iodata_wn-gx300gr
 
 define Device/k2p
   DTS := K2P
   IMAGE_SIZE := $(ralink_default_fw_size_16M)
   DEVICE_TITLE := Phicomm K2P
 endef
-TARGET_DEVICES += k2p
+# TARGET_DEVICES += k2p
 
 define Device/xiaomi_mir3p
   DTS := MIR3P
@@ -304,7 +304,7 @@ define Device/mt7621
   IMAGE_SIZE := $(ralink_default_fw_size_4M)
   DEVICE_TITLE := MediaTek MT7621 EVB
 endef
-TARGET_DEVICES += mt7621
+# TARGET_DEVICES += mt7621
 
 define Device/newifi-d1
   DTS := Newifi-D1
@@ -313,7 +313,7 @@ define Device/newifi-d1
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += newifi-d1
+# TARGET_DEVICES += newifi-d1
 
 define Device/d-team_newifi-d2
   DTS := Newifi-D2
@@ -322,7 +322,7 @@ define Device/d-team_newifi-d2
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += d-team_newifi-d2
+# TARGET_DEVICES += d-team_newifi-d2
 
 define Device/pbr-m1
   DTS := PBR-M1
@@ -332,7 +332,7 @@ define Device/pbr-m1
 	kmod-ata-core kmod-ata-ahci kmod-mt7603 kmod-mt76x2 kmod-sdhci-mt7620 \
 	kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += pbr-m1
+# TARGET_DEVICES += pbr-m1
 
 define Device/r6220
   DTS := R6220
@@ -354,7 +354,7 @@ define Device/r6220
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += r6220
+# TARGET_DEVICES += r6220
 
 define Device/netgear_ex6150
   DTS := EX6150
@@ -365,7 +365,7 @@ define Device/netgear_ex6150
   IMAGES += factory.chk
   IMAGE/factory.chk := $$(sysupgrade_bin) | check-size $$$$(IMAGE_SIZE) | netgear-chk
 endef
-TARGET_DEVICES += netgear_ex6150
+# TARGET_DEVICES += netgear_ex6150
 
 define Device/netgear_r6350
   DTS := R6350
@@ -387,7 +387,7 @@ define Device/netgear_r6350
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt7615e kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += netgear_r6350
+# TARGET_DEVICES += netgear_r6350
 
 define Device/MikroTik
   BLOCKSIZE := 64k
@@ -406,21 +406,21 @@ define Device/mikrotik_rb750gr3
   DEVICE_TITLE := MikroTik RouterBOARD RB750Gr3
   DEVICE_PACKAGES += kmod-gpio-beeper
 endef
-TARGET_DEVICES += mikrotik_rb750gr3
+# TARGET_DEVICES += mikrotik_rb750gr3
 
 define Device/mikrotik_rbm33g
   $(Device/MikroTik)
   DTS := RBM33G
   DEVICE_TITLE := MikroTik RouterBOARD M33G
 endef
-TARGET_DEVICES += mikrotik_rbm33g
+# TARGET_DEVICES += mikrotik_rbm33g
 
 define Device/mikrotik_rbm11g
   $(Device/MikroTik)
   DTS := RBM11G
   DEVICE_TITLE := MikroTik RouterBOARD M11G
 endef
-TARGET_DEVICES += mikrotik_rbm11g
+# TARGET_DEVICES += mikrotik_rbm11g
 
 define Device/mtc_wr1201
 	DTS := WR1201
@@ -430,7 +430,7 @@ define Device/mtc_wr1201
 	DEVICE_PACKAGES := kmod-sdhci-mt7620 kmod-mt76x2 kmod-usb3 \
 		kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += mtc_wr1201
+# TARGET_DEVICES += mtc_wr1201
 
 define Device/re350-v1
   DTS := RE350
@@ -460,7 +460,7 @@ define Device/sap-g3200u3
   DEVICE_TITLE := STORYLiNK SAP-G3200U3
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += sap-g3200u3
+# TARGET_DEVICES += sap-g3200u3
 
 define Device/sk-wb8
   DTS := SK-WB8
@@ -470,7 +470,7 @@ define Device/sk-wb8
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport \
 	uboot-envtools wpad-basic
 endef
-TARGET_DEVICES += sk-wb8
+# TARGET_DEVICES += sk-wb8
 
 define Device/telco-electronics_x1
   DTS := Telco-Electronics-X1
@@ -478,14 +478,14 @@ define Device/telco-electronics_x1
   DEVICE_TITLE := Telco Electronics X1
   DEVICE_PACKAGES := kmod-usb3 kmod-mt76 wpad-basic
 endef
-TARGET_DEVICES += telco-electronics_x1
+# TARGET_DEVICES += telco-electronics_x1
 
 define Device/timecloud
   DTS := Timecloud
   DEVICE_TITLE := Thunder Timecloud
   DEVICE_PACKAGES := kmod-usb3
 endef
-TARGET_DEVICES += timecloud
+# TARGET_DEVICES += timecloud
 
 define Device/ubnt-erx
   DTS := UBNT-ERX
@@ -514,7 +514,7 @@ define Device/unielec_u7621-06-256m-16m
   DEVICE_PACKAGES := kmod-ata-core kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3
   SUPPORTED_DEVICES += u7621-06-256M-16M
 endef
-TARGET_DEVICES += unielec_u7621-06-256m-16m
+# TARGET_DEVICES += unielec_u7621-06-256m-16m
 
 define Device/unielec_u7621-06-512m-64m
   DTS := U7621-06-512M-64M
@@ -522,7 +522,7 @@ define Device/unielec_u7621-06-512m-64m
   DEVICE_TITLE := UniElec U7621-06 (512M RAM/64M flash)
   DEVICE_PACKAGES := kmod-ata-core kmod-ata-ahci kmod-sdhci-mt7620 kmod-usb3
 endef
-TARGET_DEVICES += unielec_u7621-06-512m-64m
+# TARGET_DEVICES += unielec_u7621-06-512m-64m
 
 define Device/vr500
   DTS := VR500
@@ -530,7 +530,7 @@ define Device/vr500
   DEVICE_TITLE := Planex VR500
   DEVICE_PACKAGES := kmod-usb3
 endef
-TARGET_DEVICES += vr500
+# TARGET_DEVICES += vr500
 
 define Device/w2914nsv2
   DTS := W2914NSV2
@@ -540,7 +540,7 @@ define Device/w2914nsv2
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += w2914nsv2
+# TARGET_DEVICES += w2914nsv2
 
 define Device/wf-2881
   DTS := WF-2881
@@ -556,7 +556,7 @@ define Device/wf-2881
   DEVICE_TITLE := NETIS WF-2881
   DEVICE_PACKAGES := kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += wf-2881
+# TARGET_DEVICES += wf-2881
 
 define Device/mqmaker_witi-256m
   DTS := WITI-256M
@@ -567,7 +567,7 @@ define Device/mqmaker_witi-256m
 	kmod-usb-ledtrig-usbport wpad-basic
   SUPPORTED_DEVICES += witi
 endef
-TARGET_DEVICES += mqmaker_witi-256m
+# TARGET_DEVICES += mqmaker_witi-256m
 
 define Device/mqmaker_witi-512m
   DTS := WITI-512M
@@ -577,7 +577,7 @@ define Device/mqmaker_witi-512m
 	kmod-ata-core kmod-ata-ahci kmod-mt76x2 kmod-sdhci-mt7620 kmod-usb3 \
 	kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += mqmaker_witi-512m
+# TARGET_DEVICES += mqmaker_witi-512m
 
 define Device/wndr3700v5
   DTS := WNDR3700V5
@@ -595,7 +595,7 @@ define Device/wndr3700v5
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += wndr3700v5
+# TARGET_DEVICES += wndr3700v5
 
 define Device/youhua_wr1200js
   DTS := WR1200JS
@@ -604,7 +604,7 @@ define Device/youhua_wr1200js
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += youhua_wr1200js
+# TARGET_DEVICES += youhua_wr1200js
 
 define Device/youku_yk-l2
   DTS := YOUKU-YK2
@@ -613,7 +613,7 @@ define Device/youku_yk-l2
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += youku_yk-l2
+# TARGET_DEVICES += youku_yk-l2
 
 define Device/wsr-1166
   DTS := WSR-1166
@@ -622,7 +622,7 @@ define Device/wsr-1166
   DEVICE_TITLE := Buffalo WSR-1166
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 wpad-basic
 endef
-TARGET_DEVICES += wsr-1166
+# TARGET_DEVICES += wsr-1166
 
 define Device/wsr-600
   DTS := WSR-600
@@ -630,7 +630,7 @@ define Device/wsr-600
   DEVICE_TITLE := Buffalo WSR-600
   DEVICE_PACKAGES := kmod-mt7603 kmod-rt2800-pci wpad-basic
 endef
-TARGET_DEVICES += wsr-600
+# TARGET_DEVICES += wsr-600
 
 define Device/zbt-we1326
   DTS := ZBT-WE1326
@@ -639,7 +639,7 @@ define Device/zbt-we1326
   DEVICE_PACKAGES := \
 	kmod-mt7603 kmod-mt76x2 kmod-usb3 kmod-sdhci-mt7620 wpad-basic
 endef
-TARGET_DEVICES += zbt-we1326
+# TARGET_DEVICES += zbt-we1326
 
 define Device/zbtlink_zbt-we3526
   DTS := ZBT-WE3526
@@ -649,7 +649,7 @@ define Device/zbtlink_zbt-we3526
 	kmod-sdhci-mt7620 kmod-mt7603 kmod-mt76x2 \
 	kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += zbtlink_zbt-we3526
+# TARGET_DEVICES += zbtlink_zbt-we3526
 
 define Device/zbt-wg2626
   DTS := ZBT-WG2626
@@ -659,7 +659,7 @@ define Device/zbt-wg2626
 	kmod-ata-core kmod-ata-ahci kmod-sdhci-mt7620 kmod-mt76x2 kmod-usb3 \
 	kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += zbt-wg2626
+# TARGET_DEVICES += zbt-wg2626
 
 define Device/zbt-wg3526-16M
   DTS := ZBT-WG3526-16M
@@ -670,7 +670,7 @@ define Device/zbt-wg3526-16M
 	kmod-ata-core kmod-ata-ahci kmod-sdhci-mt7620 kmod-mt7603 kmod-mt76x2 \
 	kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += zbt-wg3526-16M
+# TARGET_DEVICES += zbt-wg3526-16M
 
 define Device/zbt-wg3526-32M
   DTS := ZBT-WG3526-32M
@@ -681,4 +681,4 @@ define Device/zbt-wg3526-32M
 	kmod-ata-core kmod-ata-ahci kmod-sdhci-mt7620 kmod-mt7603 kmod-mt76x2 \
 	kmod-usb3 kmod-usb-ledtrig-usbport wpad-basic
 endef
-TARGET_DEVICES += zbt-wg3526-32M
+# TARGET_DEVICES += zbt-wg3526-32M

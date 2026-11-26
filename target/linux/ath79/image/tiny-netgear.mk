@@ -16,7 +16,7 @@ define Device/netgear_wnr612-v2
   NETGEAR_BOARD_ID := REALWNR612V2
   SUPPORTED_DEVICES += wnr612-v2
 endef
-TARGET_DEVICES += netgear_wnr612-v2
+# TARGET_DEVICES += netgear_wnr612-v2
 
 define Device/on_n150r
   $(Device/netgear_ar7240)
@@ -24,4 +24,4 @@ define Device/on_n150r
   NETGEAR_BOARD_ID := N150R
   SUPPORTED_DEVICES += n150r
 endef
-TARGET_DEVICES += on_n150r
+# TARGET_DEVICES += on_n150r

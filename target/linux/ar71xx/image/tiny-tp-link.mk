@@ -659,7 +659,7 @@ define Device/rnx-n360rt
   DEVICE_PROFILE := RNXN360RT
   TPLINK_HWREV := 0x00420001
 endef
-TARGET_DEVICES += rnx-n360rt
+# TARGET_DEVICES += rnx-n360rt
 
 define Device/tl-wr941nd-v4
   $(Device/tplink-4m)

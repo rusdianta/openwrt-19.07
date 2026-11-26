@@ -27,7 +27,7 @@ define Device/c-60
   KERNEL := kernel-bin | patch-cmdline | lzma | uImage lzma
   IMAGE/sysupgrade.tar := sysupgrade-tar
 endef
-TARGET_DEVICES += c-60
+# TARGET_DEVICES += c-60
 
 define Device/domywifi-dw33d
   DEVICE_TITLE := DomyWifi DW33D
@@ -37,7 +37,7 @@ define Device/domywifi-dw33d
   MTDPARTS := spi0.0:256k(u-boot)ro,64k(u-boot-env)ro,14528k(rootfs),1472k(kernel),64k(art)ro,16000k@0x50000(firmware);ar934x-nfc:96m(rootfs_data),32m(backup)ro
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 14528k | append-kernel | check-size $$$$(IMAGE_SIZE)
 endef
-TARGET_DEVICES += domywifi-dw33d
+# TARGET_DEVICES += domywifi-dw33d
 
 define Device/hiveap-121
   DEVICE_TITLE := Aerohive HiveAP-121
@@ -55,7 +55,7 @@ define Device/hiveap-121
   IMAGE/factory.bin := append-kernel | pad-to $$$$(KERNEL_SIZE) | append-ubi | check-size $$$$(IMAGE_SIZE)
   IMAGE/sysupgrade.tar := sysupgrade-tar
 endef
-TARGET_DEVICES += hiveap-121
+# TARGET_DEVICES += hiveap-121
 
 define Device/mr18
   DEVICE_TITLE := Meraki MR18
@@ -68,7 +68,7 @@ define Device/mr18
   KERNEL_INITRAMFS := kernel-bin | patch-cmdline | MerakiNAND
   IMAGE/sysupgrade.tar := sysupgrade-tar
 endef
-TARGET_DEVICES += mr18
+# TARGET_DEVICES += mr18
 
 define Device/rambutan
   DEVICE_TITLE := 8devices Rambutan
@@ -82,7 +82,7 @@ define Device/rambutan
   IMAGE/sysupgrade.tar := sysupgrade-tar
   IMAGE/factory.ubi := append-ubi
 endef
-TARGET_DEVICES += rambutan
+# TARGET_DEVICES += rambutan
 
 define Device/wi2a-ac200i
   SUPPORTED_DEVICES = $(1)
@@ -97,7 +97,7 @@ define Device/wi2a-ac200i
   KERNEL := kernel-bin | patch-cmdline | lzma | uImage lzma
   IMAGE/sysupgrade.tar := sysupgrade-tar | append-metadata
 endef
-TARGET_DEVICES += wi2a-ac200i
+# TARGET_DEVICES += wi2a-ac200i
 
 define Device/z1
   DEVICE_TITLE := Meraki Z1
@@ -110,28 +110,28 @@ define Device/z1
   KERNEL_INITRAMFS := kernel-bin | patch-cmdline | MerakiNAND-old
   IMAGE/sysupgrade.tar := sysupgrade-tar
 endef
-TARGET_DEVICES += z1
+# TARGET_DEVICES += z1
 
 define LegacyDevice/R6100
   DEVICE_TITLE := NETGEAR R6100
   DEVICE_PACKAGES := kmod-ath10k-ct ath10k-firmware-qca988x-ct kmod-usb-core kmod-usb2 kmod-usb-ledtrig-usbport
 endef
-LEGACY_DEVICES += R6100
+# LEGACY_DEVICES += R6100
 
 define LegacyDevice/WNDR3700V4
   DEVICE_TITLE := NETGEAR WNDR3700v4
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ledtrig-usbport
 endef
-LEGACY_DEVICES += WNDR3700V4
+# LEGACY_DEVICES += WNDR3700V4
 
 define LegacyDevice/WNDR4300V1
   DEVICE_TITLE := NETGEAR WNDR4300v1
   DEVICE_PACKAGES := kmod-usb-core kmod-usb2 kmod-usb-ledtrig-usbport
 endef
-LEGACY_DEVICES += WNDR4300V1
+# LEGACY_DEVICES += WNDR4300V1
 
 define LegacyDevice/NBG6716
   DEVICE_TITLE := Zyxel NBG 6716
   DEVICE_PACKAGES := kmod-rtc-pcf8563 kmod-ath10k-ct ath10k-firmware-qca988x-ct
 endef
-LEGACY_DEVICES += NBG6716
+# LEGACY_DEVICES += NBG6716

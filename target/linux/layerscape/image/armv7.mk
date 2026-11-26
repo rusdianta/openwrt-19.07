@@ -28,7 +28,7 @@ define Device/ls1021atwr
     append-kernel | pad-to 32M | \
     append-rootfs | pad-rootfs | check-size 67108865
 endef
-TARGET_DEVICES += ls1021atwr
+# TARGET_DEVICES += ls1021atwr
 
 define Device/ls1021atwr-sdboot
   DEVICE_TITLE := LS1021ATWR (SD Card Boot)
@@ -44,7 +44,7 @@ define Device/ls1021atwr-sdboot
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1021atwr-sdboot
+# TARGET_DEVICES += ls1021atwr-sdboot
 
 define Device/ls1021aiot-sdboot
   DEVICE_TITLE := LS1021AIOT (SD Card Boot)
@@ -60,4 +60,4 @@ define Device/ls1021aiot-sdboot
     append-kernel | pad-to $(LS_SD_ROOTFSPART_OFFSET)M | \
     append-rootfs | check-size $(LS_SD_IMAGE_SIZE)
 endef
-TARGET_DEVICES += ls1021aiot-sdboot
+# TARGET_DEVICES += ls1021aiot-sdboot

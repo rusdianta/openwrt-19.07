@@ -70,7 +70,7 @@ define Device/generic
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 128k | combined-image
   IMAGE_NAME = $$(IMAGE_PREFIX)-$$(if $$(findstring kernel,$$(2)),,$$(1)-)$$(2)
 endef
-TARGET_DEVICES += generic
+# TARGET_DEVICES += generic
 
 define Device/ubnt2-pico2
   DEVICE_TITLE := Ubiquiti XS2-8
@@ -82,26 +82,26 @@ define Device/ubnt2
   DEVICE_TITLE := Ubiquiti XS2
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 128k | mkfwimage XS2 -v XS2.ar2316
 endef
-#TARGET_DEVICES += ubnt2
+# TARGET_DEVICES += ubnt2
 
 define Device/ubnt5
   DEVICE_TITLE := Ubiquiti XS5
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 128k | mkfwimage XS5 -v XS5.ar2313
 endef
-#TARGET_DEVICES += ubnt5
+# TARGET_DEVICES += ubnt5
 
 define Device/np25g
   DEVICE_TITLE := np25g
   KERNEL := kernel-bin | gzip-kernel
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 128k | mkmylofw np25g
 endef
-#TARGET_DEVICES += np25g
+# TARGET_DEVICES += np25g
 
 define Device/wpe53g
   DEVICE_TITLE := wpe53g
   KERNEL := kernel-bin | gzip-kernel
   IMAGE/sysupgrade.bin := append-rootfs | pad-rootfs | pad-to 128k | mkmylofw wpe53g
 endef
-#TARGET_DEVICES += wpe53g
+# TARGET_DEVICES += wpe53g
 
 $(eval $(call BuildImage))

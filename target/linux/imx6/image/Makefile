@@ -167,7 +167,7 @@ define Device/ventana
   BLOCKSIZE := 128k
   MKUBIFS_OPTS := -m $$(PAGESIZE) -e 124KiB
 endef
-TARGET_DEVICES += ventana
+# TARGET_DEVICES += ventana
 
 define Device/ventana-large
   $(Device/ventana)
@@ -178,13 +178,13 @@ define Device/ventana-large
   BLOCKSIZE := 256k
   MKUBIFS_OPTS := -m $$(PAGESIZE) -e 248KiB
 endef
-TARGET_DEVICES += ventana-large
+# TARGET_DEVICES += ventana-large
 
 define Device/wandboard
   DEVICE_TITLE := Wandboard Dual
   DEVICE_DTS := imx6dl-wandboard
 endef
-TARGET_DEVICES += wandboard
+# TARGET_DEVICES += wandboard
 
 define Device/cubox-i
   KERNEL := kernel-bin | install-dtb
@@ -198,7 +198,7 @@ define Device/cubox-i
   FILESYSTEMS := squashfs
   IMAGE/combined.bin := append-rootfs | pad-extra 128k | imx6-sdcard
 endef
-TARGET_DEVICES += cubox-i
+# TARGET_DEVICES += cubox-i
 
 define Device/apalis
   DEVICE_TITLE := Toradex Apalis family
@@ -221,6 +221,6 @@ define Device/apalis
   ARTIFACTS := recovery.scr
   ARTIFACT/recovery.scr := recovery-scr
 endef
-TARGET_DEVICES += apalis
+# TARGET_DEVICES += apalis
 
 $(eval $(call BuildImage))

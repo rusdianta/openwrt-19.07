@@ -54,6 +54,6 @@ define Device/compulab_trimslice
 	kmod-usb-storage wpad-mini
   UBOOT := trimslice-mmc
 endef
-TARGET_DEVICES += compulab_trimslice
+# TARGET_DEVICES += compulab_trimslice
 
 $(eval $(call BuildImage))

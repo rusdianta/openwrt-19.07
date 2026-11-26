@@ -29,7 +29,7 @@ define Device/nsim
 	DEVICE_PROFILE := nsim
 	DEVICE_DTS := nsim_700
 endef
-TARGET_DEVICES += nsim
+# TARGET_DEVICES += nsim
 endif
 
 # Root FS on SD-card
