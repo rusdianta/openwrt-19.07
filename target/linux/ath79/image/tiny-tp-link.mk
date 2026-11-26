@@ -61,6 +61,16 @@ define Device/tplink_tl-mr3420-v2
 endef
 TARGET_DEVICES += tplink_tl-mr3420-v2
 
+define Device/tplink_tl-mr3420-v3
+  $(Device/tplink-4mlzma)
+  ATH_SOC := qca9531
+  DEVICE_TITLE := TP-Link TL-MR3420 v3
+  TPLINK_HWID := 0x34200003
+  DEVICE_PACKAGES := kmod-usb2 kmod-usb-ledtrig-usbport
+  SUPPORTED_DEVICES += tl-mr3420-v3
+endef
+TARGET_DEVICES += tplink_tl-mr3420-v3
+
 define Device/tplink_tl-wa701nd-v1
   $(Device/tplink-4m)
   ATH_SOC := ar7240
