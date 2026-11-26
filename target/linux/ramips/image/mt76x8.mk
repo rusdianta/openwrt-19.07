@@ -512,6 +512,14 @@ define Device/xiaomi_mir4a-100m
 endef
 TARGET_DEVICES += xiaomi_mir4a-100m
 
+define Device/xiaomi_mi-router-4c
+  DTS := XIAOMI-MIR4C
+  IMAGE_SIZE := 14976k
+  DEVICE_TITLE := Xiaomi Mi Router 4C
+  DEVICE_PACKAGES := uboot-envtools
+endef
+TARGET_DEVICES += xiaomi_mi-router-4c
+
 define Device/zbtlink_zbt-we1226
   DTS := ZBT-WE1226
   IMAGE_SIZE := $(ralink_default_fw_size_8M)
