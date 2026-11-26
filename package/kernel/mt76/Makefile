@@ -6,23 +6,23 @@ PKG_RELEASE=1
 PKG_LICENSE:=GPLv2
 PKG_LICENSE_FILES:=
 
-PKG_SOURCE_URL:=https://github.com/openwrt/mt76
+PKG_SOURCE_URL:=https://github.com/rusdianta/mt76
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_DATE:=2021-02-15
-PKG_SOURCE_VERSION:=5c768dec13389700ff3fa3d25083fb43d8e7adda
-PKG_MIRROR_HASH:=2ef0cf233bedc20e77c61cd6dd6085e162cce5c2719b5285bcdd8bf92ebf88eb
+PKG_SOURCE_DATE:=2025-08-05
+PKG_SOURCE_VERSION:=5f56927f59edc8d6e3bf41de85e881d1dde1b626
+PKG_MIRROR_HASH:=skip
 
 PKG_MAINTAINER:=Felix Fietkau <nbd@nbd.name>
 PKG_BUILD_PARALLEL:=1
 
 PKG_CONFIG_DEPENDS += \
-	CONFIG_PACKAGE_kmod-mt76-usb \
-	CONFIG_PACKAGE_kmod-mt76x02-common \
-	CONFIG_PACKAGE_kmod-mt76x0-common \
-	CONFIG_PACKAGE_kmod-mt76x0u \
-	CONFIG_PACKAGE_kmod-mt76x2-common \
-	CONFIG_PACKAGE_kmod-mt76x2 \
-	CONFIG_PACKAGE_kmod-mt76x2u \
+#	CONFIG_PACKAGE_kmod-mt76-usb \
+#	CONFIG_PACKAGE_kmod-mt76x02-common \
+#	CONFIG_PACKAGE_kmod-mt76x0-common \
+#	CONFIG_PACKAGE_kmod-mt76x0u \
+#	CONFIG_PACKAGE_kmod-mt76x2-common \
+#	CONFIG_PACKAGE_kmod-mt76x2 \
+#	CONFIG_PACKAGE_kmod-mt76x2u \
 	CONFIG_PACKAGE_kmod-mt7603
 
 STAMP_CONFIGURED_DEPENDS := $(STAGING_DIR)/usr/include/mac80211-backport/backport/autoconf.h
@@ -39,9 +39,10 @@ endef
 
 define KernelPackage/mt76
   SUBMENU:=Wireless Drivers
-  TITLE:=MediaTek MT76x2/MT7603 wireless driver (metapackage)
+  TITLE:=MediaTek MT7603 wireless driver (metapackage)
   DEPENDS:= \
-	+kmod-mt76-core +kmod-mt76x2 +kmod-mt7603
+	+kmod-mt76-core +kmod-mt7603
+#	+kmod-mt76-core +kmod-mt76x2 +kmod-mt7603
 endef
 
 define KernelPackage/mt76-core
