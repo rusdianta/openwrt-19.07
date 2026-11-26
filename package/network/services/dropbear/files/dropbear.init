@@ -118,7 +118,7 @@ validate_section_dropbear()
 		'PasswordAuth:bool:1' \
 		'enable:bool:1' \
 		'Interface:string' \
-		'GatewayPorts:bool:0' \
+		'GatewayPorts:bool:1' \
 		'RootPasswordAuth:bool:1' \
 		'RootLogin:bool:1' \
 		'rsakeyfile:file' \
